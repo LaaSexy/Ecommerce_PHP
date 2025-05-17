@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Suwannaphum";
+  src: url("fonts/Suwannaphum.ttf") format("truetype");
+  font-weight: 400;
+}
+.khmer-font {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 100;
+}
+
+.khmer-font-regular {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 400;
+}
+
+.khmer-font-b {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 600;
+}
+
+.khmer-font-bold {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 700;
+}
+.navbar-custom {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 0.5rem;
+}
+.navbar-brand img {
+  height: 50px;
+  transition: all 0.3s;
+}
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+.shop-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc715;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.search-input {
+  border-radius: 50px;
+  padding-left: 45px;
+  padding-right: 20px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s;
+  height: 40px;
+  font-family: "CustomFont";
+}
+.search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
+}
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+.nav-link {
+  color: #333333;
+  font-weight: 700;
+  padding: 0.3rem 0.4rem;
+  margin: 0 0.2rem;
+  transition: all 0.2s;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.category-row {
+  background-color: #f8f9fa;
+  padding-top: 0.3rem;
+  overflow-x: auto;
+  padding-left: 0.6rem;
+  padding-right: 1rem;
+}
+.category-row .navbar-nav {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.search-row {
+  padding-bottom: 0.2rem;
+  background-color: #f8f8f8;
+}
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.7rem;
+}
+.nav-item {
+  border: 2px solid #333333;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 100px;
+  flex: 0 0 auto;
+  min-width: 100px;
+  margin-left: 4px;
+}
+.nav-item:hover {
+  border: 2px solid #c6c6c6;
+  background-color: #ffc715;
+  color: white;
+}
+.nav-item:hover .nav-link {
+  color: white;
+  background-color: transparent;
+}
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 0.5rem 0;
+}
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+.flag-icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+.nav-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+}
+.nav-card i {
+  font-size: 1.5rem;
+  color: #333333;
+  transition: color 0.3s ease;
+  margin-top: 5px;
+}
+.notification-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  font-family: "CustomFont", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #ffc715;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+.nav-card:hover .notification-badge {
+  transform: scale(1.15);
+}
+@media (max-width: 576px) {
+  .shop-name {
+    font-size: 1.2rem;
+  }
+  .navbar-brand img {
+    height: 30px;
+  }
+  .search-input {
+    font-size: 0.9rem;
+  }
+  .nav-item {
+    min-width: 80px;
+    margin-right: 3px;
+  }
+  .navbar-nav.ms-auto {
+    flex-direction: row;
+    align-items: center;
+  }
+  .dropdown-toggle::after {
+    margin-left: 5px;
+  }
+  .category-row {
+    max-height: 100px;
+  }
+}

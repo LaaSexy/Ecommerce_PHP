@@ -1,0 +1,124 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  font-family: Arial, sans-serif;
+}
+@font-face {
+  font-family: "Suwannaphum";
+  src: url("fonts/Suwannaphum.ttf") format("truetype");
+  font-weight: 400;
+}
+.khmer-font {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 100;
+}
+.khmer-font-regular {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 400;
+}
+.khmer-font-b {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 600;
+}
+.khmer-font-bold {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 700;
+}
+.product-title {
+  font-size: 19px;
+  font-weight: bold;
+}
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.options-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.size-option {
+  display: inline-block;
+  margin-right: 10px;
+  height: 30px;
+  width: 79px;
+  border: 1px solid #c6c6c6;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+.size-option:hover,
+.size-option.active {
+  background-color: #ffc715;
+  border: 1px solid #ddd;
+  color: white;
+}
+.description-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.8rem 0;
+}
+.quantity-selector {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.quantity-btn {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffc715;
+  border-radius: 20px;
+}
+.quantity-input {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  margin: 0 20px;
+}
+.product-image {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.thumbnail-image {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.thumbnail-image:hover {
+  border: 2px solid #ffc715;
+}
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.footer-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px 0;
+}
+.add-to-cart {
+  background-color: #ffc715;
+  color: white;
+  border: none;
+  width: 90%;
+  height: 45px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
