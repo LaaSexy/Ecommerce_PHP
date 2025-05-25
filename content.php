@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopfinity-Content</title>
+    <title>Shopfinity</title>
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/Shopfinity.png">
     <link rel="stylesheet" href="./styles/content.css">
@@ -24,35 +24,43 @@
         .card-custom:hover {
             transform: scale(1.05);
         }
+        .carousel-item img {
+            object-fit: cover;
+            height: 500px;
+        }
+        .btn-carousel{
+            background-color: none;
+            border: none;
+            background: none;
+        }
     </style>
 </head>
 <body>
    <main class="container-fluid px-0">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+        <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-inner mt-2">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 h-100 rounded" src="images/Banner1.jpg" alt="First slide">
+                    <img src="images/Banner1.jpg" class="d-block w-100 rounded" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 h-100 rounded" src="images/Banner2.jpg" alt="Second slide">
+                    <img src="images/Banner2.jpg" class="d-block w-100 rounded" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 h-100 rounded" src="images/Banner3.jpg" alt="Third slide">
+                    <img src="images/Banner3.jpg" class="d-block w-100 rounded" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Banner4.jpg" class="d-block w-100 rounded" alt="Four slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Banner5.jpg" class="d-block w-100 rounded" alt="Five slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <button class="carousel-control-prev btn-carousel cursor-pointer" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            </button>
+            <button class="carousel-control-next btn-carousel cursor-pointer" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            </button>
         </div>
         <div class="py-2 bg-light">
             <?php

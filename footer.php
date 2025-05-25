@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopfinity-Footer</title>
+    <title>Shopfinity</title>
     <link rel="icon" type="image/png" href="images/Shopfinity.png">
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
@@ -15,11 +15,11 @@
                     <img src="./images/Shopfinity.png" alt="Shopfinity" class="footer-logo">
                     <p>Shopfinity is your premier online shopping destination in Cambodia. We offer high-quality products with fast delivery and excellent customer service.</p>
                     <div class="social-icons mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100072511796260&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://x.com/tengchanto41463"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="https://t.me/Tengchantola"><i class="fab fa-telegram"></i></a>
                         <a href="https://www.linkedin.com/in/teng-chantola-09b292297/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="http://www.youtube.com/@Laaanimechannel"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -60,7 +60,7 @@
                     <h5 class="footer-heading">Contact</h5>
                     <div class="footer-links">
                         <p><i class="fas fa-map-marker-alt me-2"></i> Phnom Penh, Cambodia</p>
-                        <p><i class="fas fa-phone me-2"></i> +855 12 345 678</p>
+                        <p><i class="fas fa-phone me-2"></i> +855 16 638 377</p>
                         <p><i class="fas fa-envelope me-2"></i> info@shopfinity.com</p>
                     </div>
                 </div>
@@ -71,6 +71,5 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

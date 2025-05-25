@@ -126,12 +126,12 @@ $categories = [
         'items' => [
             [
                 'id' => 'drink-1', 
-                'name' => 'Local drink', 
-                'price' => '$8.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'Sting Energy Drink', 
+                'price' => '$0.70', 
+                'image' => './images/Energy 1.jpg', 
+                'brand' => 'Sting', 
                 'description' => 'Refreshing local beverage.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Energy1_1.jpg', './images/Energy1_2.jpg', './images/Energy 1.jpg']
             ],
             [
                 'id' => 'drink-2', 
@@ -185,21 +185,21 @@ $categories = [
             ],
             [
                 'id' => 'cosmetic-3', 
-                'name' => 'Mascara', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Volumizing mascara.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'Centella Soothing Cream', 
+                'price' => '$7.50', 
+                'image' => './images/Skincare 3.webp', 
+                'brand' => 'Skin 1004', 
+                'description' => 'A non sticky soothing gel with Centella, Trehalose, and Ceramide NP moisturizes the skin and repairs the skin barrier.', 
+                'thumbnails' => ['./images/Skincare3_1.webp', './images/Skincare3_2.webp','./images/Skincare3_3.jpg', './images/Skincare3_4.webp']
             ],
             [
                 'id' => 'cosmetic-4', 
-                'name' => 'Eyeshadow', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
+                'name' => 'Centella Watergel Sheet Ampoule Mask', 
+                'price' => '$3.00', 
+                'image' => './images/Skincare 4.webp', 
                 'brand' => 'Jordan', 
                 'description' => 'Vibrant eyeshadow palette.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Skincare4_1.webp', './images/Skincare4_2.webp','./images/Skincare4_3.webp', './images/Skincare4_4.webp']
             ],
         ],
     ],
@@ -272,21 +272,75 @@ $categories = [
         'items' => [
             [
                 'id' => 'book-1', 
-                'name' => 'Textbook', 
-                'price' => '$15.00', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Generic', 
+                'name' => '១០០ គំនិតនៃភាពជោគជ័យ', 
+                'price' => '$5.00', 
+                'image' => './images/Book 1.jpg', 
+                'brand' => 'Book Store', 
                 'description' => 'Educational textbook for students.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Book 1.jpg', './images/Book1_1.jpg']
             ],
             [
                 'id' => 'book-2', 
-                'name' => 'Novel', 
-                'price' => '$10.00', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Generic', 
+                'name' => '១០០ គំនិតយកឈ្នះភាពក្រីក្រ', 
+                'price' => '$7.50', 
+                'image' => './images/Book 2.jpg', 
+                'brand' => 'Book Store', 
                 'description' => 'Engaging novel for leisure reading.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Book 2.jpg', './images/Book2_1.jpg']
+            ],
+            [
+                'id' => 'book-2', 
+                'name' => '១០៨ ចក្ខុវិស័យ គួច ម៉េងលី', 
+                'price' => '$8.50', 
+                'image' => './images/Book 3.jpg', 
+                'brand' => 'Book Store', 
+                'description' => 'Engaging novel for leisure reading.', 
+                'thumbnails' => ['./images/Book 3.jpg']
+            ],
+            [
+                'id' => 'book-2', 
+                'name' => '១០០ គំនិតនៃភាពជោគជ័យ', 
+                'price' => '$7.50', 
+                'image' => './images/Book 4.jpg', 
+                'brand' => 'Book Store', 
+                'description' => 'Engaging novel for leisure reading.', 
+                'thumbnails' => ['./images/Book 4.jpg', './images/Book4_1.jpg']
+            ],
+            [
+                'id' => 'book-1', 
+                'name' => '១០០រឿង ដែលគួរយល់ដឹងពីប្រទេសកម្ពុជា', 
+                'price' => '$5.00', 
+                'image' => './images/Book 5.jpg', 
+                'brand' => 'Book Store', 
+                'description' => 'Educational textbook for students.', 
+                'thumbnails' => ['./images/Book 1.jpg', './images/Book1_1.jpg']
+            ],
+            [
+                'id' => 'book-2', 
+                'name' => '១០នាទីក្លាយជាកំពូលអ្នកលក់', 
+                'price' => '$3.00', 
+                'image' => './images/Book 6.jpg', 
+                'brand' => 'Book Store', 
+                'description' => 'Engaging novel for leisure reading.', 
+                'thumbnails' => ['./images/Book 6.jpg', './images/Book6_1.jpg', './images/Book6_3.jpg', './images/Book6_4.jpg']
+            ],
+            [
+                'id' => 'book-2', 
+                'name' => '១០៨ ចក្ខុវិស័យ គួច ម៉េងលី', 
+                'price' => '$8.50', 
+                'image' => './images/Book 3.jpg', 
+                'brand' => 'Book Store', 
+                'description' => 'Engaging novel for leisure reading.', 
+                'thumbnails' => ['./images/Book 3.jpg']
+            ],
+            [
+                'id' => 'book-2', 
+                'name' => '១០០ គំនិតនៃភាពជោគជ័យ', 
+                'price' => '$7.50', 
+                'image' => './images/Book 4.jpg', 
+                'brand' => 'Book Store', 
+                'description' => 'Engaging novel for leisure reading.', 
+                'thumbnails' => ['./images/Book 4.jpg', './images/Book4_1.jpg']
             ],
         ],
     ],

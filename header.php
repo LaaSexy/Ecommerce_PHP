@@ -1,5 +1,4 @@
 <?php
-// Include categories.php to access the $categories array
 include './constants/categories.php';
 ?>
 <!DOCTYPE html>
@@ -35,7 +34,6 @@ include './constants/categories.php';
         } 
         .nav-custom {
             background-color: #FFC715;
-            color: #FFF; 
         }
     </style>
 </head>
@@ -50,9 +48,9 @@ include './constants/categories.php';
                     <span class="shop-name">Shopfinity</span>
                 </div>
                 <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
-                    <a class="nav-card position-relative">
+                    <a href="checkout.php" class="nav-card position-relative" id="cartIcon" style="text-decoration: none;">
                         <i class="fas fa-shopping-cart"></i>
-                        <span class="badge bg-primary notification-badge">5</span>
+                        <span class="badge bg-primary notification-badge" id="cartBadge">0</span>
                     </a>
                     <li class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -108,6 +106,43 @@ include './constants/categories.php';
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const categoryLinks = document.querySelectorAll('.category-row .nav-item');
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    categoryLinks.forEach(l => l.classList.remove('nav-custom'));
+                    this.classList.add('nav-custom');
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartBadge = document.getElementById('cartBadge');
+            
+            cartBadge.textContent = totalItems;
+            cartBadge.style.display = totalItems > 0 ? 'flex' : 'none';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartBadge();
+            
+            const cartIcon = document.getElementById('cartIcon');
+            if (cartIcon) {
+                cartIcon.addEventListener('click', function(e) {
+                    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    if (cart.length === 0) {
+                        e.preventDefault();
+                        alert('Your cart is empty!');
+                    }
+                });
+            }
+            
             const categoryLinks = document.querySelectorAll('.category-row .nav-item');
             categoryLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
