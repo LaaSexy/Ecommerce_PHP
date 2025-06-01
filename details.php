@@ -75,12 +75,12 @@ if (!$item) {
             </div>
             <div class="col-md-6">
                 <div class="price text-monospace"><?php echo htmlspecialchars($item['price']); ?></div>
-                <div class="options-label">Options</div>
+                <!-- <div class="options-label">Options</div>
                 <div class="mb-3">
                     <span class="size-option active">M</span>
                     <span class="size-option">L</span>
                     <span class="size-option">XL</span>
-                </div>
+                </div> -->
                 
                 <h2 class="description-title">Description</h2>
                 <p><?php echo htmlspecialchars($item['description']); ?></p>
@@ -102,88 +102,120 @@ if (!$item) {
     </footer>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-       function getCart() {
-            return JSON.parse(localStorage.getItem('cart')) || [];
-        }
-        function saveCart(cart) {
-            localStorage.setItem('cart', JSON.stringify(cart));
-        }
+       document.addEventListener('DOMContentLoaded', function() {
+            function getCart() {
+                return JSON.parse(localStorage.getItem('cart')) || [];
+            }
 
-        function selectThumbnail(element) {
-            document.querySelectorAll('.thumbnail-image').forEach(img => {
-                img.classList.remove('active');
-            });
-            element.classList.add('active');
-            document.getElementById('mainImage').src = element.src;
-            localStorage.setItem('selectedThumbnail', element.src);
-        }
+            function saveCart(cart) {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
 
-        document.querySelectorAll('.quantity-btn').forEach(button => {
-            button.addEventListener('click', function () {
-                const input = document.querySelector('.quantity-input');
-                const addToCartBtn = document.querySelector('.add-to-cart');
-                const pricePerItem = parseFloat(addToCartBtn.dataset.price);
+            function selectThumbnail(element) {
+                document.querySelectorAll('.thumbnail-image').forEach(img => {
+                    img.classList.remove('active');
+                });
+                element.classList.add('active');
+                document.getElementById('mainImage').src = element.src;
+                localStorage.setItem('selectedThumbnail', element.src);
+            }
 
-                let value = parseInt(input.textContent);
-                if (this.textContent.trim() === '+') {
-                    value++;
-                } else {
-                    value = value > 0 ? value - 1 : 0;
-                }
-                input.textContent = value;
+            const quantityInput = document.querySelector('.quantity-input');
+            const addToCartBtn = document.querySelector('.add-to-cart');
+            const pricePerItem = parseFloat(addToCartBtn.dataset.price);
 
-                if (value === 0) {
-                    addToCartBtn.disabled = true;
-                    addToCartBtn.textContent = `Add to Cart - $0.00`;
-                } else {
-                    addToCartBtn.disabled = false;
+            quantityInput.textContent = '1';
+            addToCartBtn.disabled = false;
+            addToCartBtn.textContent = `Add to Cart - $${pricePerItem.toFixed(2)}`;
+
+            document.querySelectorAll('.quantity-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    let value = parseInt(quantityInput.textContent);
+                    if (this.textContent.trim() === '+') {
+                        value++;
+                    } else {
+                        value = value > 1 ? value - 1 : 1;
+                    }
+                    quantityInput.textContent = value;
+
                     const totalPrice = (pricePerItem * value).toFixed(2);
                     addToCartBtn.textContent = `Add to Cart - $${totalPrice}`;
-                }
+                    addToCartBtn.disabled = false;
+                });
             });
-        });
-
-        document.querySelectorAll('.size-option').forEach(option => {
-            option.addEventListener('click', function () {
-                document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        const quantityInput = document.querySelector('.quantity-input');
-        quantityInput.textContent = '0';
-        const addToCartBtn = document.querySelector('.add-to-cart');
-        addToCartBtn.disabled = true;
-        addToCartBtn.textContent = `Add to Cart - $0.00`;
-
-        document.querySelector('.add-to-cart').addEventListener('click', () => {
-            const selectedThumbnail = localStorage.getItem('selectedThumbnail');
-            const item = {
-                id: '<?php echo htmlspecialchars($item['id']); ?>',
-                name: '<?php echo htmlspecialchars($item['name']); ?>',
-                price: parseFloat('<?php echo htmlspecialchars(str_replace(['$', ','], '', $item['price'])); ?>'),
-                image: selectedThumbnail || '<?php echo htmlspecialchars($item['image']); ?>',
-                quantity: parseInt(document.querySelector('.quantity-input').textContent),
-                size: document.querySelector('.size-option.active').textContent
-            };
-            let cart = getCart();
-            cart.push(item);
-            saveCart(cart);
-            localStorage.removeItem('selectedThumbnail');
-
-            quantityInput.textContent = '0';
 
             const sizeOptions = document.querySelectorAll('.size-option');
-            sizeOptions.forEach(opt => opt.classList.remove('active'));
             if (sizeOptions.length > 0) {
+                sizeOptions.forEach(option => {
+                    option.addEventListener('click', function() {
+                        sizeOptions.forEach(opt => opt.classList.remove('active'));
+                        this.classList.add('active');
+                    });
+                });
                 sizeOptions[0].classList.add('active');
             }
 
-            addToCartBtn.disabled = true;
-            addToCartBtn.textContent = `Add to Cart - $0.00`;
+            addToCartBtn.addEventListener('click', () => {
+                const selectedThumbnail = localStorage.getItem('selectedThumbnail');
+                const quantity = parseInt(quantityInput.textContent);
 
-            alert('Item added to cart!');
+                const item = {
+                    id: '<?php echo htmlspecialchars($item['id']); ?>',
+                    name: '<?php echo htmlspecialchars($item['name']); ?>',
+                    price: pricePerItem,
+                    image: selectedThumbnail || '<?php echo htmlspecialchars($item['image']); ?>',
+                    quantity: quantity,
+                    size: sizeOptions.length > 0 ? document.querySelector('.size-option.active')?.textContent || 'M' : ''
+                };
+
+                let cart = getCart();
+                const existingItemIndex = cart.findIndex(cartItem => cartItem.id === item.id && cartItem.size === item.size);
+                if (existingItemIndex >= 0) {
+                    cart[existingItemIndex].quantity += item.quantity;
+                } else {
+                    cart.push(item);
+                }
+                saveCart(cart);
+
+                localStorage.removeItem('selectedThumbnail');
+                quantityInput.textContent = '0';
+                addToCartBtn.disabled = true;
+                addToCartBtn.textContent = `Add to Cart - $0.00`;
+
+                if (sizeOptions.length > 0) {
+                    sizeOptions.forEach(opt => opt.classList.remove('active'));
+                    sizeOptions[0].classList.add('active');
+                }
+
+                const thumbnails = document.querySelectorAll('.thumbnail-image');
+                if (thumbnails.length > 0) {
+                    thumbnails.forEach(img => img.classList.remove('active'));
+                    thumbnails[0].classList.add('active');
+                    document.getElementById('mainImage').src = thumbnails[0].src;
+                }
+                Swal.fire({
+                    title: "Added Sucessfully!",
+                    icon: "success",
+                    draggable: true,
+                    showClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeInUp
+                        animate__faster
+                        `
+                    },
+                    hideClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeOutDown
+                        animate__faster
+                        `
+                    }
+                });
+            });
+            window.selectThumbnail = selectThumbnail;
         });
     </script>
 </body>

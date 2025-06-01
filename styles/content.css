@@ -209,9 +209,7 @@ h3 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
-.nav-card:hover .notification-badge {
-  transform: scale(1.15);
-}
+
 @media (max-width: 576px) {
   .navbar-brand img {
     height: 30px;

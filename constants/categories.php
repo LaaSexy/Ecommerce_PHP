@@ -350,6 +350,24 @@ $categories = [
         'items' => [
             [
                 'id' => 'computer-1', 
+                'name' => 'Small Portable Nylon Anti Static Brushes Electronics Computer Keyboard Laptop Cleaning Brush Kit', 
+                'price' => '$25.00', 
+                'image' => './images/Computer 1.jpg', 
+                'brand' => 'Logitech', 
+                'description' => 'Small Portable Nylon Anti Static Brushes Electronics Computer Keyboard Laptop Cleaning Brush Kit.', 
+                'thumbnails' => ['./images/Computer 1.jpg', './images/Computer1_1.jpg', './images/Computer1_2.jpg', './images/Computer1_3.jpg']
+            ],
+            [
+                'id' => 'computer-2', 
+                'name' => 'Logitech M185 Wireless Mouse', 
+                'price' => '$45.00', 
+                'image' => './images/Computer 2.jpg', 
+                'brand' => 'Logitech', 
+                'description' => 'Ergonomic wireless mouse.', 
+                'thumbnails' => ['./images/Computer 2.jpg', './images/Computer2_1.jpg', './images/Computer2_2.jpg', './images/Computer2_3.jpg']
+            ],
+             [
+                'id' => 'computer-3', 
                 'name' => 'Mouse', 
                 'price' => '$25.00', 
                 'image' => './images/Shopfinity.png', 
@@ -358,13 +376,13 @@ $categories = [
                 'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
             ],
             [
-                'id' => 'computer-2', 
-                'name' => 'Keyboard', 
-                'price' => '$45.00', 
-                'image' => './images/Shopfinity.png', 
+                'id' => 'computer-4', 
+                'name' => 'RK ROYAL KLUDGE S98 Mechanical Keyboard', 
+                'price' => '$99.00', 
+                'image' => './images/Computer 3.webp', 
                 'brand' => 'Logitech', 
-                'description' => 'Ergonomic wireless mouse.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'description' => 'Big Features on a Small Screen - Is there anything it can not display? Custom gif image, date. connection mode, WIN/MAC layout, battery status, etc.', 
+                'thumbnails' => ['./images/Computer 3.webp', './images/Computer3_1.jpg','./images/Computer3_2.jpg', './images/Computer3_3.jpg']
             ],
         ],
     ],
@@ -374,21 +392,39 @@ $categories = [
         'items' => [
             [
                 'id' => 'electronic-1', 
-                'name' => 'Smartphone', 
-                'price' => '$300.00', 
-                'image' => './images/Shopfinity.png', 
+                'name' => 'Surge Protector Power Strip', 
+                'price' => '$9.00', 
+                'image' => './images/Electronic 1.jpg', 
                 'brand' => 'Samsung', 
-                'description' => 'Latest smartphone with advanced features.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'description' => 'Surge Protector Power Strip - HANYCONY 8 Outlets 4 USB (2 USB C) Charging Ports, Multi Plug Outlet Extender, 5Ft Braided Extension Cord, Flat Plug Wall...', 
+                'thumbnails' => ['./images/Electronic 1.jpg', './images/Electronic1_1.jpg', './images/Electronic1_2.jpg', './images/Electronic1_3.jpg']
             ],
             [
                 'id' => 'electronic-2', 
-                'name' => 'Headphones', 
-                'price' => '$50.00', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Sony', 
-                'description' => 'Noise-canceling headphones.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'JBL Tune 510BT', 
+                'price' => '$39.00', 
+                'image' => './images/Electronic 2.jpg', 
+                'brand' => 'JBL', 
+                'description' => 'JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (White)', 
+                'thumbnails' => ['./images/Electronic 2.jpg', './images/Electronic2_1.jpg','./images/Electronic2_2.jpg', './images/Electronic2_3.jpg']
+            ],
+            [
+                'id' => 'electronic-3', 
+                'name' => 'JBL Go 3 Eco', 
+                'price' => '$29.00', 
+                'image' => './images/Electronic 3.jpg', 
+                'brand' => 'JBL', 
+                'description' => 'JBL Go 3 Eco - Portable Mini Bluetooth Speaker, big audio and punchy bass, IP67 waterproof and dustproof, 5 hours of playtime, Made in part with recycled materials (Eco Blue)', 
+                'thumbnails' => ['./images/Electronic 3.jpg', './images/Electronic3_1.jpg', './images/Electronic3_2.jpg', './images/Electronic3_3.jpg']
+            ],
+            [
+                'id' => 'electronic-4', 
+                'name' => 'JBL Vibe Beam', 
+                'price' => '$49.00', 
+                'image' => './images/Electronic 4.jpg', 
+                'brand' => 'JBL', 
+                'description' => 'JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (White)', 
+                'thumbnails' => ['./images/Electronic 4.jpg','./images/Electronic4_1.jpg', './images/Electronic4_2.jpg','./images/Electronic4_3.jpg']
             ],
         ],
     ],

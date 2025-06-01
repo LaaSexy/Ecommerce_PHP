@@ -117,6 +117,7 @@
         </div>
     </footer>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             function getCart() {
@@ -210,31 +211,31 @@
 
                     updateCartItem(index, quantity);
                 } else if (e.target.closest('.delete-btn')) {
-                    if (confirm('Are you sure you want to remove this item from the cart?')) {
+                    Swal.fire({
+                        title: "Are you sure?",
+                        text: "You want to remove this item from the cart?",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, delete it!"
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                            Swal.fire({
+                            title: "Deleted!",
+                            text: "Your item had been deleted.",
+                            icon: "success"
+                            });
                         removeCartItem(index);
-                    }
+                        }
+                    });
                 }
             });
 
             document.getElementById('checkoutBtn').addEventListener('click', () => {
                 const form = document.getElementById('contactForm');
                 const inputs = form.querySelectorAll('input[required]');
-                const isValid = Array.from(inputs).every(input => {
-                    const valid = input.value.trim() !== '';
-                    input.classList.toggle('is-invalid', !valid);
-                    return valid;
-                });
 
-                if (isValid) {
-                    const cart = getCart();
-                    if (cart.length > 0) {
-                        alert('Order placed successfully!');
-                        localStorage.removeItem('cart');
-                        window.location.href = 'index.php';
-                    } else {
-                        alert('Your cart is empty!');
-                    }
-                }
             });
         });
     </script>

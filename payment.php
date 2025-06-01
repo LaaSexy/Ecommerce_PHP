@@ -1,24 +1,20 @@
 <?php
 session_start();
 
-// Simulated shop data (replace with actual data source if available)
 $shopData = [
     'currency' => isset($_SESSION['shop_currency']) ? $_SESSION['shop_currency'] : 'USD'
 ];
 
-// Simulated cart data in session (replace with actual cart logic)
 $_SESSION['cart'] = isset($_SESSION['cart']) ? $_SESSION['cart'] : [
     ['id' => 1, 'total' => 10.50],
     ['id' => 2, 'total' => 20.75]
 ];
 
-// Function to format currency (equivalent to formatCurrency in JS)
 function formatCurrency($amount, $currency = 'USD') {
     $symbol = $currency === 'USD' ? '$' : ($currency === 'KHR' ? '៛' : $currency);
     return $symbol . number_format($amount, 2, '.', ',');
 }   
 
-// Calculate total from cart
 function calculateTotal($cart) {
     $total = 0;
     foreach ($cart as $item) {
@@ -29,10 +25,8 @@ function calculateTotal($cart) {
     return number_format($total, 2, '.', '');
 }
 
-// Get slug from query parameter
 $slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : '';
 
-// Calculate total
 $total = calculateTotal($_SESSION['cart']);
 $currency = $shopData['currency'];
 ?>
@@ -43,7 +37,8 @@ $currency = $shopData['currency'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopfinity</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALE    crossorigin="anonymous">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/Shopfinity.png">
     <style>
         body {
             background-color: #E8E8E8;
@@ -67,15 +62,26 @@ $currency = $shopData['currency'];
         .qr-info {
             position: absolute;
             bottom: 380px;
-            padding-left: 600px;
+            padding-left: 30px;
             text-align: right;
-            font-weight: ;
+            font-weight: 600px;
         }
         .qr-code {
             position: absolute;
             bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
+        }
+        .back-btn{
+            padding: 0px 10px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: row;
+            color: #fff;
+            background-color: #FFC715;
+            border-radius: 10px;
         }
         @media (max-width: 992px) {
             .qr-info {
@@ -93,17 +99,17 @@ $currency = $shopData['currency'];
 </head>
 <body>
     <header class="p-3 bg-transparent">
-        <a href="<?php echo $slug ? '/' . htmlspecialchars($slug) : '/'; ?>" class="btn btn-violet btn-lg d-flex align-items-center ms-3">
-            <img src="./images/Back Arrow.png" alt="Back" class="me-1" style="width: 20px; height: 20px;">
-            Back
-        </a>
+        <button href="<?php echo $slug ? '/' . htmlspecialchars($slug) : '/'; ?>" class="back-btn">
+            <img src="./images/Back Arrow.png" alt="Back" width="30" height="30" class="mr-1 mt-1">
+            <h5 class="mt-2">Back</h5>
+        </button>
     </header>
     <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center align-items-center">
         <div class="qr-container">
             <img src="./images/KHQR-Display-Aba.png" alt="KHQR Display" class="img-fluid" style="max-width: 100%;">
             <div class="qr-info">
                 <p class="mb-1">Teng Chantola</p>
-                <p class="mb-0"><span class="fw-bold fs-5"><?php echo formatCurrency($total, $currency); ?></span></p>
+                <p class="mr-5"><span><?php echo formatCurrency($total, $currency); ?></span></p>
             </div>
             <img src="./images/QR Code.png" alt="QR Code" class="qr-code">
         </div>
