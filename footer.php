@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
-    <footer class="bg-dark text-white">
-        <div class="container-fluid px-5">
+    <footer class="bg-dark text-white container-fluid">
+        <div class="px-4">
             <div class="row">
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4 footer-header">
                     <img src="./images/Shopfinity.png" alt="Shopfinity" class="footer-logo">
                     <p>Shopfinity is your premier online shopping destination in Cambodia. We offer high-quality products with fast delivery and excellent customer service.</p>
                     <div class="social-icons mt-3">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            
+                
             <div class="copyright text-center">
                 <p class="mb-0">&copy; <?= date('Y') ?> Shopfinity. All Rights Reserved.</p>
             </div>

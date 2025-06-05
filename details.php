@@ -39,16 +39,17 @@ if (!$item) {
         .thumbnail-image.active {
             border: 2px solid #FFC715; 
         }
+        .btn-back{
+            height: 40px;
+        }
     </style>
 </head>
 <body>
     <header class="position-fixed top-0 start-0 end-0 bg-white py-3 shadow-sm z-3">
         <div class="container-fluid">
             <div class="d-flex align-items-center position-relative">
-                <button class="btn btn-sm position-absolute bg-white" onclick="window.location.href='index.php'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7"/>
-                    </svg>
+                <button class="btn btn-sm position-absolute bg-transparent btn-back border rounded-circle" onclick="window.location.href='index.php'">
+                   <img src="./images/BackChev.png" alt="back btn" width="24" height="24" class="mr-1">
                 </button>
                 <h1 class="product-title khmer-font-bold text-center w-100 m-0">
                     <?php echo htmlspecialchars($item_name); ?>
@@ -90,9 +91,9 @@ if (!$item) {
     
     <footer class="shadow-sm footer-content">
         <div class="d-flex flex-row justify-content-center">
-            <button type="button" class="quantity-btn btn btn-lg text-white btn-lg">-</button>
-            <h3 class="quantity-input text-black text-lg mt-2">1</h3>
-            <button type="button" class="quantity-btn btn btn-lg text-white">+</button>
+            <button type="button" class="btn-decreasement quantity-btn btn btn-lg text-white btn-lg">−</button>
+            <h3 class="quantity-input text-black  mt-2">1</h3>
+            <button type="button" class="btn-increasement quantity-btn btn btn-lg text-white">+</button>
         </div>
         <div class="d-flex flex-row justify-content-center mt-3">
              <button type="button" class="add-to-cart btn" data-price="<?php echo htmlspecialchars(str_replace(['$', ','], '', $item['price'])); ?>">
@@ -104,7 +105,7 @@ if (!$item) {
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-       document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             function getCart() {
                 return JSON.parse(localStorage.getItem('cart')) || [];
             }
@@ -125,25 +126,32 @@ if (!$item) {
             const quantityInput = document.querySelector('.quantity-input');
             const addToCartBtn = document.querySelector('.add-to-cart');
             const pricePerItem = parseFloat(addToCartBtn.dataset.price);
+            const decreasementBtn = document.querySelector('.btn-decreasement');
+            const increasementBtn = document.querySelector('.btn-increasement');
 
             quantityInput.textContent = '1';
             addToCartBtn.disabled = false;
             addToCartBtn.textContent = `Add to Cart - $${pricePerItem.toFixed(2)}`;
+            decreasementBtn.disabled = true;
 
-            document.querySelectorAll('.quantity-btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    let value = parseInt(quantityInput.textContent);
-                    if (this.textContent.trim() === '+') {
-                        value++;
-                    } else {
-                        value = value > 1 ? value - 1 : 1;
-                    }
-                    quantityInput.textContent = value;
+            increasementBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.textContent);
+                value++;
+                quantityInput.textContent = value;
+                const totalPrice = (pricePerItem * value).toFixed(2);
+                addToCartBtn.textContent = `Add to Cart - $${totalPrice}`;
+                addToCartBtn.disabled = false;
+                decreasementBtn.disabled = value === 1;
+            });
 
-                    const totalPrice = (pricePerItem * value).toFixed(2);
-                    addToCartBtn.textContent = `Add to Cart - $${totalPrice}`;
-                    addToCartBtn.disabled = false;
-                });
+            decreasementBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.textContent);
+                value = value > 1 ? value - 1 : 1;
+                quantityInput.textContent = value;
+                const totalPrice = (pricePerItem * value).toFixed(2);
+                addToCartBtn.textContent = `Add to Cart - $${totalPrice}`;
+                addToCartBtn.disabled = false;
+                decreasementBtn.disabled = value === 1;
             });
 
             const sizeOptions = document.querySelectorAll('.size-option');
@@ -196,23 +204,9 @@ if (!$item) {
                     document.getElementById('mainImage').src = thumbnails[0].src;
                 }
                 Swal.fire({
-                    title: "Added Sucessfully!",
+                    title: "Added Successfully!",
                     icon: "success",
                     draggable: true,
-                    showClass: {
-                        popup: `
-                        animate__animated
-                        animate__fadeInUp
-                        animate__faster
-                        `
-                    },
-                    hideClass: {
-                        popup: `
-                        animate__animated
-                        animate__fadeOutDown
-                        animate__faster
-                        `
-                    }
                 });
             });
             window.selectThumbnail = selectThumbnail;

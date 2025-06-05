@@ -73,27 +73,15 @@ $currency = $shopData['currency'];
             transform: translateX(-50%);
         }
         .back-btn{
-            padding: 0px 10px;
+            padding: 0px 8px;
             border: none;
             display: flex;
             justify-content: center;
             align-self: center;
             flex-direction: row;
             color: #fff;
-            background-color: #FFC715;
+            background-color: transparent;
             border-radius: 10px;
-        }
-        @media (max-width: 992px) {
-            .qr-info {
-                position: static;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            .qr-code {
-                position: static;
-                transform: none;
-                margin-top: 20px;
-            }
         }
     </style>
 </head>
@@ -101,7 +89,7 @@ $currency = $shopData['currency'];
     <header class="p-3 bg-transparent">
         <button href="<?php echo $slug ? '/' . htmlspecialchars($slug) : '/'; ?>" class="back-btn">
             <img src="./images/Back Arrow.png" alt="Back" width="30" height="30" class="mr-1 mt-1">
-            <h5 class="mt-2">Back</h5>
+            <h5 class="mt-2 text-primary">Back</h5>
         </button>
     </header>
     <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center align-items-center">
@@ -109,12 +97,11 @@ $currency = $shopData['currency'];
             <img src="./images/KHQR-Display-Aba.png" alt="KHQR Display" class="img-fluid" style="max-width: 100%;">
             <div class="qr-info">
                 <p class="mb-1">Teng Chantola</p>
-                <p class="mr-5"><span><?php echo formatCurrency($total, $currency); ?></span></p>
+                <h6 class="mr-4"><span><?php echo formatCurrency($total, $currency); ?></span></h6>
             </div>
             <img src="./images/QR Code.png" alt="QR Code" class="qr-code">
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

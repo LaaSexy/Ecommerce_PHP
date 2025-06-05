@@ -10,23 +10,23 @@
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .sticky-container {
-            position: sticky;
-            top: 170px;
-            background-color: white;
-            z-index: 100;
-            padding-top: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        .card-custom {
-            cursor: pointer; 
-            transition: transform 0.2s;
-        }
-        .card-custom:hover {
-            transform: scale(1.05);
-        }
-         .btn-carousel {
+      .sticky-container {
+          position: sticky;
+          top: 170px;
+          background-color: white;
+          z-index: 100;
+          padding-top: 15px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #eee;
+      }
+      .card-custom {
+          cursor: pointer; 
+          transition: transform 0.2s;
+      }
+      .card-custom:hover {
+          transform: scale(1.05);
+      }
+      .btn-carousel {
         background: transparent;
         border: none;
         outline: none;
@@ -48,7 +48,7 @@
 </head>
 <body>
    <main class="container-fluid px-0">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <main id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -81,18 +81,17 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
         <div class="py-2 bg-light">
             <?php
             include './constants/categories.php';
             foreach ($categories as $category) {
             ?>
                 <div class="sticky-container bg-light px-4" id="<?php echo htmlspecialchars($category['id']); ?>">
-                    <h4 class="khmer-font mt-2 ml-3"><?php echo htmlspecialchars($category['name']); ?></h4>
+                    <h4 class="khmer-font mt-4 ml-3"><?php echo htmlspecialchars($category['name']); ?></h4>
                 </div>
                 <div class="row g-4 mb-5 mx-4">
                     <?php foreach ($category['items'] as $item) { ?>
-                        <div class="col-6 col-sm-6 col-md-3 mt-3">
+                        <div class="col-6 col-sm-6 col-md-3 mt-5">
                             <a href="details.php?item_id=<?php echo htmlspecialchars($item['id']); ?>" style="text-decoration: none;">
                                 <div class="card card-custom h-100">
                                     <div class="position-relative">

@@ -249,20 +249,83 @@ $categories = [
         'items' => [
             [
                 'id' => 'soap-1', 
-                'name' => 'Liquid Soap', 
-                'price' => '$4.50', 'image' => './images/Shopfinity.png', 
-                'brand' => 'Dove', 
-                'description' => 'Gentle liquid soap for soft skin.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'CLEAR Men Cooling', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 1.avif', 
+                'brand' => 'Clear',
+                'options' => ["170 ml", "330 ml"],
+                'description' => 'CLEAR Men Cooling Itch Control Ant-dandruff Shampoo. Soothes & calms scalp for immediate relief from itch^.', 
+                'thumbnails' => ['./images/Sabo 1.avif', './images/Sabo1_1.avif']
             ],
             [
                 'id' => 'soap-2', 
-                'name' => 'Bar Soap', 
-                'price' => '$2.90', 
-                'image' => './images/Shopfinity.png', 
+                'name' => 'CLEAR Herbal Care', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 2.avif', 
+                'brand' => 'Clear',
+                'options' => ["170 ml", "330 ml"],
+                'description' => 'CLEAR Herbal Care Anti-dandruff Shampoo. Remove dandruff*, nourishes scalp and provide relief from itch^.', 
+                'thumbnails' => ['./images/Sabo 2.avif', './images/Sabo2_1.avif']
+            ],
+            [
+                'id' => 'soap-3', 
+                'name' => 'CLEAR Extra Strength', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 3.avif', 
+                'brand' => 'Clear',
+                'options' => ["170 ml", "330 ml"],
+                'description' => 'CLEAR Extra Strength Anti-dandruff Shampoo. For scalps prone to severe dandruff*. Get non-stop protection against severe dandruff*.', 
+                'thumbnails' => ['./images/Sabo 3.avif', './images/Sabo3_1.avif']
+            ],
+            [
+                'id' => 'soap-4', 
+                'name' => 'CLEAR Sakura Fresh', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 4.avif', 
+                'brand' => 'Clear', 
+                'options' => ["170 ml", "330 ml"],
+                'description' => 'CLEAR Sakura Fresh Anti-dandruff Shampoo. For refreshing scalp and hair with long lasting Sakura Flower scent``', 
+                'thumbnails' => ['./images/Sabo 2.avif', './images/Sabo2_1.avif']
+            ],
+            [
+                'id' => 'soap-5', 
+                'name' => 'CLEAR Men Deep Cleanse', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 5.avif', 
+                'brand' => 'Clear', 
+                'options' => ["70 ml", "165 ml", "315 ml", "450 ml", "650 ml"],
+                'description' => 'CLEAR Men Deep Cleanse Anti-dandruff Shampoo. Deeply cleans and purifies scalp and hair affected by dirt, pollution and grease.', 
+                'thumbnails' => ['./images/Sabo 1.avif', './images/Sabo1_1.avif']
+            ],
+            [
+                'id' => 'soap-6', 
+                'name' => 'CLEAR Men Cool', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 6.avif', 
+                'brand' => 'Clear', 
+                'options' => ["70 ml", "165 ml", "315 ml", "450 ml", "650  ml"],
+                'description' => 'CLEAR Men Cool Sport Menthol Anti-dandruff Shampoo. Provides intense cooling power, for freshness that lasts all day.', 
+                'thumbnails' => ['./images/Sabo 6.avif', './images/Sabo6_1.avif']
+            ],
+            [
+                'id' => 'soap-7', 
+                'name' => 'Relaxing Care Lavender', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 7.avif', 
                 'brand' => 'Dove', 
-                'description' => 'Moisturizing bar soap.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'options' => ["793g"],
+                'description' => 'Soak in a warm bath with the relaxing scent of this mild foaming bath salt formula. Ease sore and tired muscles while leaving skin feeling soft and smooth.', 
+                'thumbnails' => ['./images/Sabo 7.avif', './images/Sabo7_1.avif']
+            ],
+            [
+                'id' => 'soap-8', 
+                'name' => 'Relaxing Care Lavender', 
+                'price' => '$2.50', 
+                'image' => './images/Sabo 8.avif', 
+                'brand' => 'Dove', 
+                'options' => ["680 ml"],
+                'description' => 'Relaxing Care Lavender & Chamomile Bubble Bath. Indulge the skin and senses with the calming and comforting scents of lavender and chamomile.', 
+                'thumbnails' => ['./images/Sabo 8.avif', './images/Sabo8_1.avif']
             ],
         ],
     ],
@@ -289,7 +352,7 @@ $categories = [
                 'thumbnails' => ['./images/Book 2.jpg', './images/Book2_1.jpg']
             ],
             [
-                'id' => 'book-2', 
+                'id' => 'book-3', 
                 'name' => '១០៨ ចក្ខុវិស័យ គួច ម៉េងលី', 
                 'price' => '$8.50', 
                 'image' => './images/Book 3.jpg', 
@@ -298,7 +361,7 @@ $categories = [
                 'thumbnails' => ['./images/Book 3.jpg']
             ],
             [
-                'id' => 'book-2', 
+                'id' => 'book-4', 
                 'name' => '១០០ គំនិតនៃភាពជោគជ័យ', 
                 'price' => '$7.50', 
                 'image' => './images/Book 4.jpg', 
@@ -307,7 +370,7 @@ $categories = [
                 'thumbnails' => ['./images/Book 4.jpg', './images/Book4_1.jpg']
             ],
             [
-                'id' => 'book-1', 
+                'id' => 'book-5', 
                 'name' => '១០០រឿង ដែលគួរយល់ដឹងពីប្រទេសកម្ពុជា', 
                 'price' => '$5.00', 
                 'image' => './images/Book 5.jpg', 
@@ -316,7 +379,7 @@ $categories = [
                 'thumbnails' => ['./images/Book 1.jpg', './images/Book1_1.jpg']
             ],
             [
-                'id' => 'book-2', 
+                'id' => 'book-6', 
                 'name' => '១០នាទីក្លាយជាកំពូលអ្នកលក់', 
                 'price' => '$3.00', 
                 'image' => './images/Book 6.jpg', 
@@ -325,7 +388,7 @@ $categories = [
                 'thumbnails' => ['./images/Book 6.jpg', './images/Book6_1.jpg', './images/Book6_3.jpg', './images/Book6_4.jpg']
             ],
             [
-                'id' => 'book-2', 
+                'id' => 'book-7', 
                 'name' => '១០៨ ចក្ខុវិស័យ គួច ម៉េងលី', 
                 'price' => '$8.50', 
                 'image' => './images/Book 3.jpg', 
@@ -334,7 +397,7 @@ $categories = [
                 'thumbnails' => ['./images/Book 3.jpg']
             ],
             [
-                'id' => 'book-2', 
+                'id' => 'book-8', 
                 'name' => '១០០ គំនិតនៃភាពជោគជ័យ', 
                 'price' => '$7.50', 
                 'image' => './images/Book 4.jpg', 
@@ -362,18 +425,9 @@ $categories = [
                 'name' => 'Logitech M185 Wireless Mouse', 
                 'price' => '$45.00', 
                 'image' => './images/Computer 2.jpg', 
-                'brand' => 'Logitech', 
+                'brand' => 'Logi', 
                 'description' => 'Ergonomic wireless mouse.', 
                 'thumbnails' => ['./images/Computer 2.jpg', './images/Computer2_1.jpg', './images/Computer2_2.jpg', './images/Computer2_3.jpg']
-            ],
-             [
-                'id' => 'computer-3', 
-                'name' => 'Mouse', 
-                'price' => '$25.00', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Logitech', 
-                'description' => 'Ergonomic wireless mouse.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
             ],
             [
                 'id' => 'computer-4', 
@@ -383,6 +437,15 @@ $categories = [
                 'brand' => 'Logitech', 
                 'description' => 'Big Features on a Small Screen - Is there anything it can not display? Custom gif image, date. connection mode, WIN/MAC layout, battery status, etc.', 
                 'thumbnails' => ['./images/Computer 3.webp', './images/Computer3_1.jpg','./images/Computer3_2.jpg', './images/Computer3_3.jpg']
+            ],
+             [
+                'id' => 'computer-3', 
+                'name' => 'Dell 7010 Optiplex Tower', 
+                'price' => '$849.00', 
+                'image' => './images/Computer 4.webp', 
+                'brand' => 'Dell', 
+                'description' => 'Ergonomic wireless mouse.', 
+                'thumbnails' => ['./images/Computer 4.webp', './images/Computer4_1.webp','./images/Computer4_2.jpg', './images/Computer4_3.jpg']
             ],
         ],
     ],
@@ -423,8 +486,8 @@ $categories = [
                 'price' => '$49.00', 
                 'image' => './images/Electronic 4.jpg', 
                 'brand' => 'JBL', 
-                'description' => 'JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (White)', 
-                'thumbnails' => ['./images/Electronic 4.jpg','./images/Electronic4_1.jpg', './images/Electronic4_2.jpg','./images/Electronic4_3.jpg']
+                'description' => 'JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (White)',
+                'thumbnails' => ['./images/Electronic 3.jpg', './images/Electronic3_1.jpg', './images/Electronic3_2.jpg', './images/Electronic3_3.jpg']
             ],
         ],
     ],

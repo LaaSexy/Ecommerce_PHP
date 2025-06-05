@@ -95,13 +95,14 @@ include './constants/categories.php';
         </div>
 
         <div class="search-row bg-right">    
-            <div class="container-fluid">
+            <div class="container-fluid px-4">
                 <div class="search-container mb-1 d-flex position-relative">
                     <img src="./images/search.png" alt="search" class="position-absolute mt-2 ml-3 w-20">
                     <input type="search" class="form-control search-input khmer-font" placeholder="ស្វែងរក" data-translate="search">
                 </div>
             </div>  
         </div>
+        
     </header>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
