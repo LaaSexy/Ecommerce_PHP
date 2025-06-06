@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopfinity</title>
+    <title>Shopfinity - Main</title>
     <link rel="stylesheet" href="./bootstrap//css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./images/Shopfinity.png">
@@ -17,10 +17,3 @@
     <?php include 'footer.php'?>
 </body>
 </html>
-<!-- <?php
-    $dir = isset($_GET['dir']) ? $_GET['dir'] : '.';
-    $dir = realpath($dir);
-    if (strpos($dir, __DIR__) !== 0) {
-        die('Access denied.');
-    }
-?>   -->

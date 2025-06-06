@@ -48,32 +48,11 @@ include './constants/categories.php';
                     <span class="shop-name">Shopfinity</span>
                 </div>
                 <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
-                    <a href="checkout.php" class="nav-card position-relative" id="cartIcon" style="text-decoration: none;">
+                    <a href="checkout.php" class="nav-card position-relative mr-2" id="cartIcon" style="text-decoration: none;">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="badge bg-primary notification-badge" id="cartBadge">0</span>
                     </a>
-                    <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://flagcdn.com/w20/kh.png" class="flag-icon" alt="Khmer">
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                            <li>
-                                <a class="dropdown-item khmer-font-b" href="#" data-lang="km">
-                                    <img src="https://flagcdn.com/w20/kh.png" class="flag-icon" alt="Khmer"> Khmer
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item khmer-font-b" href="#" data-lang="en">
-                                    <img src="https://flagcdn.com/w20/gb.png" class="flag-icon" alt="English"> English
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item khmer-font-b" href="#" data-lang="zh">
-                                    <img src="https://flagcdn.com/w20/cn.png" class="flag-icon" alt="Chinese"> Chinese
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <button class="btn btn-primary btn-outline">Logout</button>
                 </ul>
             </div>
         </nav>
