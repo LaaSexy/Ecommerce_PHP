@@ -1,3 +1,4 @@
+<?php include("./database/connect.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +17,10 @@
     <?php include 'footer.php'?>
 </body>
 </html>
-<?php
+<!-- <?php
     $dir = isset($_GET['dir']) ? $_GET['dir'] : '.';
     $dir = realpath($dir);
     if (strpos($dir, __DIR__) !== 0) {
         die('Access denied.');
     }
-?>  
+?>   -->
