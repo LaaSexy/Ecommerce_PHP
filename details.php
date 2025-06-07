@@ -76,13 +76,6 @@ if (!$item) {
             </div>
             <div class="col-md-6">
                 <div class="price text-monospace"><?php echo htmlspecialchars($item['price']); ?></div>
-                <!-- <div class="options-label">Options</div>
-                <div class="mb-3">
-                    <span class="size-option active">M</span>
-                    <span class="size-option">L</span>
-                    <span class="size-option">XL</span>
-                </div> -->
-                
                 <h2 class="description-title">Description</h2>
                 <p><?php echo htmlspecialchars($item['description']); ?></p>
             </div>

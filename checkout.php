@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopfinity</title>
+    <title>Shopfinity - Checkout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/Shopfinity.png">
     <style>
@@ -83,14 +83,28 @@
                 <section class="card p-4">
                     <h2 class="fs-4 fw-semibold mb-3">Contact Information</h2>
                     <form id="contactForm">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <label class="form-label">Personal Information</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Enter your name" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+
+                        <label class="form-label">Contact Details</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Contact" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Enter your address" required>
+
+                        <label class="form-label">Address</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Contact" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </form>
                 </section>
@@ -233,9 +247,9 @@
             });
 
             document.getElementById('checkoutBtn').addEventListener('click', () => {
-                const form = document.getElementById('contactForm');
-                const inputs = form.querySelectorAll('input[required]');
-
+                const cart = getCart();
+                const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                window.location.href = `payment.php?total=${total.toFixed(2)}`;
             });
         });
     </script>

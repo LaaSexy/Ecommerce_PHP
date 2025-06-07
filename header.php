@@ -35,6 +35,10 @@ include './constants/categories.php';
         .nav-custom {
             background-color: #FFC715;
         }
+        .btn-primary{
+            background-color: transparent !important;
+            border: none !important;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +56,29 @@ include './constants/categories.php';
                         <i class="fas fa-shopping-cart"></i>
                         <span class="badge bg-primary notification-badge" id="cartBadge">0</span>
                     </a>
-                    <button class="btn btn-primary btn-outline">Logout</button>
+                    <div class="dropdown show">
+                        <a class="btn btn-primary dropdown-toggle text-dark" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Teng Chantola
+                        </a>
+                        <div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-fw mr-2"></i>Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog fa-fw mr-2"></i>Settings
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sign-out-alt fa-fw mr-2"></i>Logout
+                                </a>
+                            </li>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -77,7 +103,7 @@ include './constants/categories.php';
             <div class="container-fluid px-4">
                 <div class="search-container mb-1 d-flex position-relative">
                     <img src="./images/search.png" alt="search" class="position-absolute mt-2 ml-3 w-20">
-                    <input type="search" class="form-control search-input khmer-font" placeholder="ស្វែងរក" data-translate="search">
+                    <input type="search" id="searchInput" class="form-control search-input khmer-font" placeholder="ស្វែងរក" data-translate="search" onkeyup="searchItems()">
                 </div>
             </div>  
         </div>

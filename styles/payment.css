@@ -1,0 +1,43 @@
+body {
+  background-color: #e8e8e8;
+}
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+.btn-violet {
+  background-color: #8b5cf6;
+  color: white;
+}
+.btn-violet:hover {
+  background-color: #7c3aed;
+  color: white;
+}
+.qr-container {
+  position: relative;
+  text-align: center;
+}
+.qr-info {
+  position: absolute;
+  bottom: 370px;
+  padding-left: 50px;
+  text-align: left;
+}
+.qr-code {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.back-btn {
+  padding: 0px 8px;
+  border: 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
