@@ -29,8 +29,8 @@ $currency = $shopData['currency'];
 <body>
     <header class="p-3 bg-transparent">
         <button href="<?php echo $slug ? '/' . htmlspecialchars($slug) : '/'; ?>" class="back-btn">
-            <img src="./images/BackChev.png" alt="Back" width="30" height="30" class="mr-1 mt-1">
-            <h5 class="mt-2 text-dark">Back</h5>
+            <img src="./images/BackChev.png" alt="Back" width="20" height="20" class="mr-1 mt-2">
+            <h6 class="mt-2 text-dark">Back</h6>
         </button>
     </header>
     <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center align-items-center">
@@ -44,5 +44,14 @@ $currency = $shopData['currency'];
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const btn_back = document.querySelectorAll('.back-btn');
+         btn_back.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'index.php';
+            });
+        });
+    </script>
 </body>
 </html>

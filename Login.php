@@ -21,15 +21,15 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="" class="sign-in-form">
+          <form action="login.php" method="POST" class="sign-in-form">
             <img src="../images/LogoAc.png" alt="" />
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" id="username" placeholder="Username" />
+              <input type="text" name="username"  id="username" placeholder="Username" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" id="password" placeholder="Password" />
+              <input type="password" name="password" id="password" placeholder="Password" required />
             </div>
             <p class="showError" hidden>Invalid Username Or Password</p>
             <input type="submit" value="Login" id="login" class="btn solid" />
@@ -56,19 +56,19 @@
               </a>
             </div>
           </form>
-          <form action="" class="sign-up-form">
+          <form action="register.php" method="POST" class="sign-up-form">
             <img src="./images/LogoAc.png" alt="" class="logo" />
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" required />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" name="email" placeholder="Email" required />
             </div>
             <input type="submit" value="Sign Up" class="btn solid" />
 

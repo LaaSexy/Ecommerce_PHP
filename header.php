@@ -57,7 +57,7 @@ include './constants/categories.php';
                         <span class="badge bg-primary notification-badge" id="cartBadge">0</span>
                     </a>
                     <div class="dropdown show">
-                        <a class="btn btn-primary dropdown-toggle text-dark" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn btn-primary dropdown-toggle text-dark font-weight-bold mt-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Teng Chantola
                         </a>
                         <div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
@@ -73,7 +73,7 @@ include './constants/categories.php';
                             </li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item btn_logout" href="#">
                                     <i class="fas fa-sign-out-alt fa-fw mr-2"></i>Logout
                                 </a>
                             </li>
@@ -110,11 +110,19 @@ include './constants/categories.php';
         
     </header>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script>
+        
         document.addEventListener('DOMContentLoaded', function() {
             const categoryLinks = document.querySelectorAll('.category-row .nav-item');
             const stickyContainers = document.querySelectorAll('.sticky-container');
-
+            const btn_logout = document.querySelectorAll('.btn_logout');
+            btn_logout.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = 'login.php';
+                });
+            });
             function setActiveCategory(targetId) {
                 categoryLinks.forEach(link => {
                     link.classList.remove('nav-custom');
@@ -138,7 +146,7 @@ include './constants/categories.php';
 
             const observerOptions = {
                 root: null,
-                rootMargin: '-170px 0px -50% 0px',
+                rootMargin: '-130px 0px -50% 0px',
                 threshold: [0, 0.1, 0.5, 1]
             };
 
@@ -174,7 +182,7 @@ include './constants/categories.php';
 
             const firstSection = document.querySelector('.sticky-container');
             if (firstSection) {
-                const targetId = `#${firstSection.id}`;
+                const targetId = `#${firstSection.id}`; 
                 setActiveCategory(targetId);
                 lastActiveSection = targetId;
             }
@@ -198,21 +206,6 @@ include './constants/categories.php';
                         e.preventDefault();
                     }
                 });
-            }
-        });
-
-        document.addEventListener('click', function(e) {
-            if (e.target.matches('.dropdown-item')) {
-                const lang = e.target.getAttribute('data-lang');
-                localStorage.setItem('selectedLanguage', lang);
-                location.reload();
-            }
-        });
-
-        const savedLang = localStorage.getItem('selectedLanguage') || 'km';
-        document.querySelectorAll('.dropdown-item').forEach(item => {
-            if (item.getAttribute('data-lang') === savedLang) {
-                item.classList.add('active');
             }
         });
     </script>

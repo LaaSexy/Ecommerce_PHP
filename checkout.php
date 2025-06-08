@@ -6,6 +6,7 @@
     <title>Shopfinity - Checkout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/Shopfinity.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             margin-bottom: 5rem;
@@ -86,7 +87,7 @@
                         <label class="form-label">Personal Information</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user mr-2 mb-2"></i></span>
                             </div>
                             <input type="text" class="form-control" placeholder="Enter your name" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
