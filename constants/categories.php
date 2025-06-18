@@ -6,75 +6,83 @@ $categories = [
         'items' => [
             [
                 'id' => 'clothing-1', 
-                'name' => 'Casual wear', 
-                'price' => '$8.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Comfortable casual wear for everyday use.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'Real Madrid 25/26 Home Authentic Jersey', 
+                'price' => '$150.00', 
+                'image' => './images/Clothing 1.avif', 
+                'brand' => 'Addidas', 
+                'options' => ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+                'description' => 'Promo codes will not apply to this product. If personalized, this item cannot be returned or exchanged and will require up to 5 business days for processing prior to being shipped.', 
+                'thumbnails' => ['./images/Clothing 1.avif', './images/Clothing1_1.avif', './images/Clothing1_2.avif', './images/Clothing1_3.avif']
             ],
             [
                 'id' => 'clothing-2', 
-                'name' => 'Formal wear', 
-                'price' => '$5.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'Trefoil Essentials Woven', 
+                'price' => '$70.00', 
+                'image' => './images/Clothing 2.avif', 
+                'brand' => 'Addidas', 
+                'options' => ["XS", "S", "M", "L", "XL", "2XL"],
                 'description' => 'Elegant formal wear for special occasions.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Clothing 2.avif', './images/Clothing2_1.avif', './images/Clothing2_2.avif', './images/Clothing2_3.avif']
             ],
             [
                 'id' => 'clothing-3', 
-                'name' => 'Sport wear', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'Adicolor Classics Beckenbauer Track Jacket', 
+                'price' => '$80.00', 
+                'image' => './images/Clothing 3.avif', 
+                'brand' => 'Addidas', 
+                'options' => ["XS", "S", "M", "L", "XL", "2XL"],
                 'description' => 'High-performance sportswear.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Clothing 3.avif', './images/Clothing3_1.avif', './images/Clothing3_2.avif']
             ],
             [
                 'id' => 'clothing-4', 
-                'name' => 'Traditional', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Traditional attire with a modern twist.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'Zip-Off Cargo Pants', 
+                'price' => '$120.00', 
+                'image' => './images/Clothing 4.avif', 
+                'brand' => 'Addidas', 
+                'options' => ["XS", "S", "M", "L", "XL", "2XL"],
+                'description' => 'Clothing will have description soon.', 
+                'thumbnails' => ['./images/Clothing 4.avif', './images/Clothing4_1.avif', './images/Clothing4_2.avif']
             ],
             [
                 'id' => 'clothing-5', 
-                'name' => 'Casual wear', 
-                'price' => '$8.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'Legendary Whitetails Journeyman Shirt Jacket, Flannel Lined Shacket for Men, Water-Resistant Coat Rugged Fall Clothing', 
+                'price' => '$89.90', 
+                'image' => './images/Clothing 5.jpg', 
+                'brand' => '', 
+                'options' => ["XS", "S", "M", "L", "XL", "2XL"],
                 'description' => 'Stylish casual wear.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Clothing 5.jpg', './images/Clothing5_1.jpg', './images/Clothing5_2.jpg', './images/Clothing5_3.jpg']
             ],
             [
                 'id' => 'clothing-6', 
-                'name' => 'Casual wear', 
-                'price' => '$5.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'TBMPOY Men is Bomber Jackets Lightweight Light Windbreaker Casual Business Dress Stylish Fall Spring Golf Work', 
+                'price' => '$38.99', 
+                'image' => './images/Clothing 6.webp', 
+                'brand' => '', 
+                'options' => ["XS", "S", "M", "L", "XL"],
                 'description' => 'Versatile casual outfit.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Clothing 6.webp', './images/Clothing6_1.jpg','./images/Clothing6_2.jpg','./images/Clothing6_3.jpg',]
             ],
             [
                 'id' => 'clothing-7', 
-                'name' => 'Casual wear', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'iCreek Men is Rain Jacket Lightweight Waterproof Packable Rain Shell Jacket Raincoat with Hood Windbreaker for Cycling, Golf', 
+                'price' => '$32.99', 
+                'image' => './images/Clothing 7.jpg', 
+                'brand' => '', 
+                'options' => ["XS", "S", "M", "L", "XL"],
                 'description' => 'Casual wear for all seasons.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Clothing 7.jpg', './images/Clothing7_1.jpg','./images/Clothing7_2.jpg','./images/Clothing7_3.jpg',]
             ],
             [
                 'id' => 'clothing-8', 
-                'name' => 'Casual wear', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'ZENTHACE Girls Sherpa Lined Full Zip Up Plaid Flannel Shirt Fuzzy Hooded Flannel Jacket with Hand Pockets', 
+                'price' => '$42.99', 
+                'image' => './images/Clothing 8.jpg', 
+                'brand' => '', 
+                'options' => ["XS", "S", "M", "L", "XL"],
                 'description' => 'Durable casual clothing.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Clothing 8.jpg', './images/Clothing8_1.jpg','./images/Clothing8_2.jpg','./images/Clothing8_3.jpg',]
             ],
         ],
     ],
@@ -84,39 +92,67 @@ $categories = [
         'items' => [
             [
                 'id' => 'food-1', 
-                'name' => 'Local food', 
-                'price' => '$8.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
+                'name' => 'cheesy roasted garlic & spinach', 
+                'price' => '$14.90', 
+                'image' => './images/Food 1.jpg', 
+                'brand' => 'The Pizza Company', 
                 'description' => 'Authentic local cuisine.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
             ],
             [
                 'id' => 'food-2', 
-                'name' => 'Fast food', 
-                'price' => '$5.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Quick and tasty fast food.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'Cutie Pizza', 
+                'price' => '$4.99', 
+                'image' => './images/Food 2.png', 
+                'brand' => 'The Pizza Company', 
+                'description' => 'Vegetable oil, chicken soup, pork bolognee sauce, pizza sauce, spaghetti', 
             ],
             [
                 'id' => 'food-3', 
-                'name' => 'Snacks', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Crunchy snacks for any time.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'Garden Salad with BBQ Grilled Chicken', 
+                'price' => '$6.20', 
+                'image' => './images/Food 3.png', 
+                'brand' => 'The Pizza Company', 
+                'description' => 'Chicken, corn, carrot, cherry  tomato, cucumber, red cabbage, salad mix, quail egg, ទឹកជ្រលក់ស៊ីសា', 
             ],
             [
                 'id' => 'food-4', 
-                'name' => 'Desserts', 
+                'name' => 'Bacon Sausage & Egg Salad', 
                 'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Sweet desserts to satisfy your cravings.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'image' => './images/Food 4.png', 
+                'brand' => 'The Pizza Company', 
+                'description' => 'Cos lettuce, red coral,​ baked, bacon, farmer sausage, quail eggs, crispy, cheese, fried onion, fried red onion, salad crème', 
+            ],
+            [
+                'id' => 'food-5', 
+                'name' => 'Burgershack Phnom Penh', 
+                'price' => '$2.80', 
+                'image' => './images/Food 5.jpg', 
+                'brand' => 'The Pizza Company', 
+                'description' => 'A no frills burger joint in the heart of the city of Phnom Penh. We provide you with full bellies, board games for days and banter you will enjoy. Meat, vegetarian and vegan options - something for everyone!', 
+            ],
+            [
+                'id' => 'food-6', 
+                'name' => '306 Wagyu Steakhouse', 
+                'price' => '$4.80', 
+                'image' => './images/Food 6.jpg', 
+                'brand' => 'The Pizza Company', 
+                'description' => '306 Wagyu Steakhouse Better you make in advance reservation for Dinner. Our prices are not suitable for everyone, Please check the menu before booking table If you want enjoy our food you must book a table for Dinner in advance ,you not book you may wait around 15 min 306 Wagyu Steakhouse has Earned an Outstanding reputation with guests consistently extolling the attentive service and the owner is personal engagement that', 
+            ],
+            [
+                'id' => 'food-7', 
+                'name' => 'Chez Tonton - Phnom Penh', 
+                'price' => '$10.00', 
+                'image' => './images/Food 7.jpg', 
+                'brand' => 'The Pizza company', 
+                'description' => 'Chez Tonton brings to Phnom Penh a modern taste of the South of France. The big choice of food specialties make this place a new attraction to the busy Riverside', 
+            ],
+            [
+                'id' => 'food-8', 
+                'name' => 'BBQ Pork Rib', 
+                'price' => '$12.50', 
+                'image' => './images/Food 8.png', 
+                'brand' => 'The Pizza Company', 
+                'description' => 'Port ribs, BBQ sauce, french fries, cos lettuce, red coral, corn kernels, cherry tomato, salad cream', 
             ],
         ],
     ],
@@ -135,30 +171,67 @@ $categories = [
             ],
             [
                 'id' => 'drink-2', 
-                'name' => 'Soft drink', 
-                'price' => '$5.90', 
-                'image' => './images/Shopfinity.png', 
-                'brand' => 'Jordan', 
-                'description' => 'Fizzy soft drink.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'name' => 'PRIME HYDRATION Variety - ICE POP', 
+                'price' => '$14.98', 
+                'image' => './images/Energy 2.jpg', 
+                'brand' => 'Prime', 
+                'description' => 'Strawberry Banana, Lemonade, Sports Drinks, Electrolyte Enhanced for Ultimate Hydration, 250mg BCAAs, B Vitamins, Antioxidants, Low Sugar, 12 Fl Oz, 15 Pack', 
+                'thumbnails' => ['./images/Energy 2.jpg', './images/Energy2_1.jpg','./images/Energy2_2.jpg','./images/Energy2_3.jpg']
             ],
             [
                 'id' => 'drink-3', 
-                'name' => 'Juice', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
+                'name' => 'Bloom Nutrition Sparkling Energy Drink for Focus', 
+                'price' => '$15.00', 
+                'image' => './images/Energy 3.webp', 
                 'brand' => 'Jordan', 
                 'description' => 'Freshly squeezed juice.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']
+                'thumbnails' => ['./images/Energy 3.webp', './images/Energy3_1.jpg', './images/Energy3_2.jpg', './images/Energy3_3.jpg',]
             ],
             [
                 'id' => 'drink-4', 
-                'name' => 'Tea', 
-                'price' => '$3.80', 
-                'image' => './images/Shopfinity.png', 
+                'name' => 'GHOST Energy Drink - 12-Pack', 
+                'price' => '$16.80', 
+                'image' => './images/Energy 4.jpg', 
                 'brand' => 'Jordan', 
                 'description' => 'Aromatic tea blend.', 
-                'thumbnails' => ['./images/Shopfinity.png', './images/Shopfinity.png']],
+                'thumbnails' => ['./images/Energy 4.jpg', './images/Energy4_1.png','./images/Energy4_2.png','./images/Energy4_3.png',]
+            ],
+            [
+                'id' => 'drink-5', 
+                'name' => 'Sting Energy Drink', 
+                'price' => '$0.70', 
+                'image' => './images/Energy 1.jpg', 
+                'brand' => 'Sting', 
+                'description' => 'Refreshing local beverage.', 
+                'thumbnails' => ['./images/Energy1_1.jpg', './images/Energy1_2.jpg', './images/Energy 1.jpg']
+            ],
+            [
+                'id' => 'drink-6', 
+                'name' => 'PRIME HYDRATION Variety - ICE POP', 
+                'price' => '$14.98', 
+                'image' => './images/Energy 2.jpg', 
+                'brand' => 'Prime', 
+                'description' => 'Strawberry Banana, Lemonade, Sports Drinks, Electrolyte Enhanced for Ultimate Hydration, 250mg BCAAs, B Vitamins, Antioxidants, Low Sugar, 12 Fl Oz, 15 Pack', 
+                'thumbnails' => ['./images/Energy 2.jpg', './images/Energy2_1.jpg','./images/Energy2_2.jpg','./images/Energy2_3.jpg']
+            ],
+            [
+                'id' => 'drink-7', 
+                'name' => 'Bloom Nutrition Sparkling Energy Drink for Focus', 
+                'price' => '$15.00', 
+                'image' => './images/Energy 3.webp', 
+                'brand' => 'Jordan', 
+                'description' => 'Freshly squeezed juice.', 
+                'thumbnails' => ['./images/Energy 3.webp', './images/Energy3_1.jpg', './images/Energy3_2.jpg', './images/Energy3_3.jpg',]
+            ],
+            [
+                'id' => 'drink-8', 
+                'name' => 'GHOST Energy Drink - 12-Pack', 
+                'price' => '$16.80', 
+                'image' => './images/Energy 4.jpg', 
+                'brand' => 'Jordan', 
+                'description' => 'Aromatic tea blend.', 
+                'thumbnails' => ['./images/Energy 4.jpg', './images/Energy4_1.png','./images/Energy4_2.png','./images/Energy4_3.png',]
+            ],
         ],
     ],
     [
@@ -197,7 +270,7 @@ $categories = [
                 'name' => 'Centella Watergel Sheet Ampoule Mask', 
                 'price' => '$3.00', 
                 'image' => './images/Skincare 4.webp', 
-                'brand' => 'Jordan', 
+                'brand' => 'Skin 1004', 
                 'description' => 'Vibrant eyeshadow palette.', 
                 'thumbnails' => ['./images/Skincare4_1.webp', './images/Skincare4_2.webp','./images/Skincare4_3.webp', './images/Skincare4_4.webp']
             ],
@@ -389,21 +462,21 @@ $categories = [
             ],
             [
                 'id' => 'book-7', 
-                'name' => '១០៨ ចក្ខុវិស័យ គួច ម៉េងលី', 
-                'price' => '$8.50', 
-                'image' => './images/Book 3.jpg', 
+                'name' => '១៤វិធី ធ្វើឲ្យអាយុវែង', 
+                'price' => '$2.00', 
+                'image' => './images/Book 7.webp', 
                 'brand' => 'Book Store', 
                 'description' => 'Engaging novel for leisure reading.', 
-                'thumbnails' => ['./images/Book 3.jpg']
+                'thumbnails' => ['./images/Book 7.webp']
             ],
             [
                 'id' => 'book-8', 
-                'name' => '១០០ គំនិតនៃភាពជោគជ័យ', 
+                'name' => 'លុយពិត', 
                 'price' => '$7.50', 
-                'image' => './images/Book 4.jpg', 
+                'image' => './images/Book 8.webp', 
                 'brand' => 'Book Store', 
                 'description' => 'Engaging novel for leisure reading.', 
-                'thumbnails' => ['./images/Book 4.jpg', './images/Book4_1.jpg']
+                'thumbnails' => ['./images/Book 8.webp']
             ],
         ],
     ],

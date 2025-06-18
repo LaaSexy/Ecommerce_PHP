@@ -97,7 +97,9 @@
                                 <div class="card card-custom h-100">
                                     <div class="position-relative">
                                         <img class="card-img-top w-100" src="<?php echo htmlspecialchars($item['image']); ?>" alt="Product image">
-                                        <div class="brand-label"><?php echo htmlspecialchars($item['brand']); ?></div>
+                                        <?php if (!empty($item['brand'])) { ?>
+                                            <div class="brand-label"><?php echo htmlspecialchars($item['brand']); ?></div>
+                                        <?php } ?>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title mb-2 text-muted text-truncate"><?php echo htmlspecialchars($item['name']); ?></h5>

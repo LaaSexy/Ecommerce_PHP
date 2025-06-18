@@ -27,12 +27,12 @@ $currency = $shopData['currency'];
     <link rel="stylesheet" href="./styles/payment.css">
 </head>
 <body>
-    <header class="p-3 bg-transparent">
+    <!-- <header class="p-3 bg-transparent">
         <button href="<?php echo $slug ? '/' . htmlspecialchars($slug) : '/'; ?>" class="back-btn">
             <img src="./images/BackChev.png" alt="Back" width="20" height="20" class="mr-1 mt-2">
             <h6 class="mt-2 text-dark">Back</h6>
         </button>
-    </header>
+    </header> -->
     <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center align-items-center">
         <div class="qr-container">
             <img src="./images/KHQR-Display-Aba.png" alt="KHQR Display" class="img-fluid" style="max-width: 100%;">

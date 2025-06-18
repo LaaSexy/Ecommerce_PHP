@@ -62,17 +62,19 @@ if (!$item) {
         <div class="row">
             <div class="col-md-6 d-md-block">
                 <img src="<?php echo htmlspecialchars($item['image']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" class="product-image mb-3" id="mainImage">
-                <div class="row">
-                    <?php foreach ($item['thumbnails'] as $index => $thumbnail) { ?>
-                        <div class="col-3">
-                            <img src="<?php echo htmlspecialchars($thumbnail); ?>" 
-                                 alt="Thumbnail" 
-                                 class="thumbnail-image" 
-                                 data-index="<?php echo $index; ?>"
-                                 onclick="selectThumbnail(this)">
-                        </div>
-                    <?php } ?>
-                </div>
+                <?php if (!empty($item['thumbnails']) && count($item['thumbnails']) > 0) { ?>
+                    <div class="row">
+                        <?php foreach ($item['thumbnails'] as $index => $thumbnail) { ?>
+                            <div class="col-3">
+                                <img src="<?php echo htmlspecialchars($thumbnail); ?>" 
+                                    alt="Thumbnail" 
+                                    class="thumbnail-image" 
+                                    data-index="<?php echo $index; ?>"
+                                    onclick="selectThumbnail(this)">
+                            </div>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
             </div>
             <div class="col-md-6">
                 <div class="price text-monospace"><?php echo htmlspecialchars($item['price']); ?></div>
@@ -161,7 +163,6 @@ if (!$item) {
             addToCartBtn.addEventListener('click', () => {
                 const selectedThumbnail = localStorage.getItem('selectedThumbnail');
                 const quantity = parseInt(quantityInput.textContent);
-
                 const item = {
                     id: '<?php echo htmlspecialchars($item['id']); ?>',
                     name: '<?php echo htmlspecialchars($item['name']); ?>',
