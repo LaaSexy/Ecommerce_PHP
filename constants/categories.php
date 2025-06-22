@@ -573,7 +573,7 @@ $categories = [
                 'thumbnails' => ['./images/Computer 2.jpg', './images/Computer2_1.jpg', './images/Computer2_2.jpg', './images/Computer2_3.jpg']
             ],
             [
-                'id' => 'computer-4', 
+                'id' => 'computer-3', 
                 'name' => 'RK ROYAL KLUDGE S98 Mechanical Keyboard', 
                 'price' => '$99.00', 
                 'image' => './images/Computer 3.webp', 
@@ -582,13 +582,49 @@ $categories = [
                 'thumbnails' => ['./images/Computer 3.webp', './images/Computer3_1.jpg','./images/Computer3_2.jpg', './images/Computer3_3.jpg']
             ],
              [
-                'id' => 'computer-3', 
+                'id' => 'computer-4', 
                 'name' => 'Dell 7010 Optiplex Tower', 
                 'price' => '$849.00', 
                 'image' => './images/Computer 4.webp', 
                 'brand' => 'Dell', 
                 'description' => 'Ergonomic wireless mouse.', 
                 'thumbnails' => ['./images/Computer 4.webp', './images/Computer4_1.webp','./images/Computer4_2.jpg', './images/Computer4_3.jpg']
+            ],
+            [
+                'id' => 'computer-5', 
+                'name' => '15.6 Inch Laptop', 
+                'price' => '$209.00', 
+                'image' => './images/Computer 5.jpg', 
+                'brand' => 'Dell', 
+                'description' => '15.6 Inch Laptop with Office 365, 4GB RAM, 128GB Storage Expandable 1TB, 5205U Processor, HD Display, Windows 11 Laptops Computer, Wi-Fi 5, BT4.2, Numpad, Type-C, for Business and Students.', 
+                'thumbnails' => ['./images/Computer 5.jpg', './images/Computer5_1.jpg', './images/Computer5_2.jpg', './images/Computer5_3.jpg']
+            ],
+            [
+                'id' => 'computer-6', 
+                'name' => 'Dell Optiplex 9020 Desktop Computer PC', 
+                'price' => '$130.98', 
+                'image' => './images/Computer 6.jpg', 
+                'brand' => 'Dell', 
+                'description' => 'Dell Optiplex 9020 Desktop Computer PC, Intel Quad-Core i5, 500GB HDD Storage, 8GB DDR3 RAM, Windows 10 Pro, DVD, WiFi, 20in Monitor, RGB Productivity Bundle (Renewed)', 
+                'thumbnails' => ['./images/Computer 6.jpg', './images/Computer6_1.jpg', './images/Computer6_2.jpg', './images/Computer6_3.jpg']
+            ],
+            [
+                'id' => 'computer-7', 
+                'name' => 'jumper Laptop', 
+                'price' => '$1200.00', 
+                'image' => './images/Computer 7.jpg', 
+                'brand' => 'jumper', 
+                'description' => 'jumper Laptop, 12GB RAM 640GB ROM, Office 365-1 Year 5305U Processor, 15.6 Inch Computer, FHD IPS Screen, 38Wh Battery, 2 Stereo Speakers, USB3.0 * 2, HDMI.', 
+                'thumbnails' => ['./images/Computer 7.jpg', './images/Computer7_1.jpg','./images/Computer7_2.jpg', './images/Computer7_3.jpg']
+            ],
+             [
+                'id' => 'computer-8', 
+                'name' => 'KAMRUI Mini PC Computer', 
+                'price' => '$149.00', 
+                'image' => './images/Computer 8.jpg', 
+                'brand' => 'KAMRUI', 
+                'description' => 'KAMRUI Mini PC Computer, Intel Processor N97 (up to 3.6 GHz), 16GB DDR4 RAM 256GB M.2 SSD, Mini Desktop Computer Support Dual 4K, WiFi, Bluetooth, Ethernet, HTPC for Business, Education, Home', 
+                'thumbnails' => ['./images/Computer 8.jpg', './images/Computer8_1.jpg','./images/Computer8_2.jpg', './images/Computer8_3.jpg']
             ],
         ],
     ],
@@ -631,6 +667,42 @@ $categories = [
                 'brand' => 'JBL', 
                 'description' => 'JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (White)',
                 'thumbnails' => ['./images/Electronic 3.jpg', './images/Electronic3_1.jpg', './images/Electronic3_2.jpg', './images/Electronic3_3.jpg']
+            ],
+            [
+                'id' => 'electronic-5', 
+                'name' => 'Canon EOS', 
+                'price' => '$479.00', 
+                'image' => './images/Electronic 5.webp', 
+                'brand' => 'Canon', 
+                'description' => 'Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS Sensor | DIGIC 4+ Image Processor and Full HD Videos', 
+                'thumbnails' => ['./images/Electronic 5.webp', './images/Electronic5_1.jpg', './images/Electronic5_2.jpg', './images/Electronic5_3.jpg']
+            ],
+            [
+                'id' => 'electronic-6', 
+                'name' => 'Replacement Carburetor', 
+                'price' => '$19.99', 
+                'image' => './images/Electronic 6.jpg', 
+                'brand' => '', 
+                'description' => 'Replacement Carburetor for Echo PB-580 PB-580T PB-580H Backpack Blower, Replace A021004331 WTA-35, with Air Filter, Fuel Lines, Gaskets, Spark Plug', 
+                'thumbnails' => ['./images/Electronic 6.jpg', './images/Electronic6_1.jpg','./images/Electronic6_2.jpg', './images/Electronic6_3.jpg']
+            ],
+            [
+                'id' => 'electronic-7', 
+                'name' => 'LISEN Retractable Car Charger', 
+                'price' => '$16.00', 
+                'image' => './images/Electronic 7.jpg', 
+                'brand' => 'LISEN', 
+                'description' => 'LISEN Retractable Car Charger, 69W USB C Car Accessories Adapter for iPhone 16 USB C Charger Fast Charging, Honda Civic Accessories, Travel Essentials Gifts for Women Men, for iPhone 16 15 14 13 12', 
+                'thumbnails' => ['./images/Electronic 7.jpg', './images/Electronic7_1.jpg', './images/Electronic7_2.jpg', './images/Electronic7_3.jpg']
+            ],
+            [
+                'id' => 'electronic-8', 
+                'name' => 'Car Phone Holder for Magsafe', 
+                'price' => '$26.98', 
+                'image' => './images/Electronic 8.jpg', 
+                'brand' => 'ANDERY', 
+                'description' => 'Car Phone Holder for Magsafe [78+LBS Strongest Suction & 2400gf Strongest Magnetic] 360° Adjustable Car Phone Mount, Phone Holders for Your Car for iPhone 16 Pro Max 15 14 13 12 Plus (Carbon Fiber)',
+                'thumbnails' => ['./images/Electronic 8.jpg', './images/Electronic8_1.jpg', './images/Electronic8_2.jpg', './images/Electronic8_3.jpg']
             ],
         ],
     ],

@@ -25,10 +25,9 @@
 .navbar-custom {
   background-color: #ffffff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 0.8rem 0.5rem;
 }
 .navbar-brand img {
-  height: 30px;
+  height: 20px;
   transition: all 0.3s;
 }
 .navbar-brand img:hover {
@@ -137,8 +136,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   text-decoration: none;
   position: relative;

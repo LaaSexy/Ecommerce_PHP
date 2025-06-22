@@ -43,44 +43,42 @@ include './constants/categories.php';
 </head>
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-custom">
-            <div class="container-fluid px-4">
-                <div class="d-flex align-items-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/Shopfinity.png" alt="Shopfinity">
-                    </a>
-                    <span class="shop-name">Shopfinity</span>
-                </div>
-                <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
-                    <a href="checkout.php" class="nav-card position-relative mr-2" id="cartIcon" style="text-decoration: none;">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="badge bg-primary notification-badge" id="cartBadge">0</span>
-                    </a>
-                    <div class="dropdown show">
-                        <a class="btn btn-primary dropdown-toggle text-dark font-weight-bold mt-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Teng Chantola
-                        </a>
-                        <div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-fw mr-2"></i>Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cog fa-fw mr-2"></i>Settings
-                                </a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <a class="dropdown-item btn_logout" href="#">
-                                    <i class="fas fa-sign-out-alt fa-fw mr-2"></i>Logout
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </ul>
+        <nav class="container-fluid px-4 navbar navbar-custom">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Shopfinity.png" alt="Shopfinity">
+                </a>
+                <span class="shop-name">Shopfinity</span>
             </div>
+            <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
+                <a href="checkout.php" class="nav-card position-relative mr-2" id="cartIcon" style="text-decoration: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge bg-primary notification-badge" id="cartBadge">0</span>
+                </a>
+                <div class="dropdown show">
+                    <a class="btn btn-primary dropdown-toggle text-dark font-weight-bold mt-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Teng Chantola
+                    </a>
+                    <div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-fw mr-2"></i>Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cog fa-fw mr-2"></i>Settings
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item btn_logout" href="#">
+                                <i class="fas fa-sign-out-alt fa-fw mr-2"></i>Logout
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
         </nav>
 
         <div class="category-row bg-light">

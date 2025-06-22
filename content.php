@@ -82,7 +82,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-        <div class="py-2 bg-light">
+        <div class="bg-light">
             <?php
             include './constants/categories.php';
             foreach ($categories as $category) {
