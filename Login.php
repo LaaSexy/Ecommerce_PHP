@@ -15,7 +15,6 @@
     />
     <link rel="icon" href="./images/Shopfinity.png" />
     <link rel="stylesheet" href="./styles/login.css">
-
   </head>
   <body>
     <div class="container">

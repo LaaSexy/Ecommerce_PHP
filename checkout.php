@@ -89,23 +89,23 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fas fa-user mr-2 mb-2"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Enter your name" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Enter your name" aria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
 
                         <label class="form-label">Contact Details</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone mr-2 mb-2"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Contact" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Enter Number" aria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
 
                         <label class="form-label">Address</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-home mr-2 mb-2"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Contact" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Enter Address" aria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
                     </form>
                 </section>

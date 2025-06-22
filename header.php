@@ -43,7 +43,7 @@ include './constants/categories.php';
 </head>
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-light navbar-custom">
+        <nav class="navbar navbar-custom">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand" href="#">

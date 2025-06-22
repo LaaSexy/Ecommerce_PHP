@@ -1,4 +1,11 @@
-<?php include("./database/connect.php"); ?>
+<?php
+    session_start();
+    include("./database/database.php");
+    // if (!isset($_SESSION['user_id'])) {
+    //     require_once __DIR__ . '/Login.php';
+    //     exit;
+    // }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

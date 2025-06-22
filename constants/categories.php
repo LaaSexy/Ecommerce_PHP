@@ -198,39 +198,39 @@ $categories = [
             ],
             [
                 'id' => 'drink-5', 
-                'name' => 'Sting Energy Drink', 
-                'price' => '$0.70', 
-                'image' => './images/Energy 1.jpg', 
+                'name' => 'Alani Nu VARIETY PACK', 
+                'price' => '$20.70', 
+                'image' => './images/Energy 5.jpg', 
                 'brand' => 'Sting', 
-                'description' => 'Refreshing local beverage.', 
-                'thumbnails' => ['./images/Energy1_1.jpg', './images/Energy1_2.jpg', './images/Energy 1.jpg']
+                'description' => 'Alani Nu VARIETY PACK (CHERRY SLUSH, JUICY PEACH, ORANGE KISS), Low Calorie Energy Drinks, 100mg Caffeine, Biotin, B Vitamins, Zero Sugar, 10 Calories or Less, 8 Fl Oz Cans, 12 Pack', 
+                'thumbnails' => ['./images/Energy 5.jpg', './images/Energy5_1.jpg', './images/Energy5_2.jpg', './images/Energy5_3.jpg']
             ],
             [
                 'id' => 'drink-6', 
-                'name' => 'PRIME HYDRATION Variety - ICE POP', 
-                'price' => '$14.98', 
-                'image' => './images/Energy 2.jpg', 
-                'brand' => 'Prime', 
-                'description' => 'Strawberry Banana, Lemonade, Sports Drinks, Electrolyte Enhanced for Ultimate Hydration, 250mg BCAAs, B Vitamins, Antioxidants, Low Sugar, 12 Fl Oz, 15 Pack', 
-                'thumbnails' => ['./images/Energy 2.jpg', './images/Energy2_1.jpg','./images/Energy2_2.jpg','./images/Energy2_3.jpg']
+                'name' => 'CELSIUS Sparkling Galaxy Vibe', 
+                'price' => '$19.49', 
+                'image' => './images/Energy 6.jpg', 
+                'brand' => 'Celsius', 
+                'description' => 'CELSIUS Sparkling Galaxy Vibe, Functional Essential Energy Drink 12 Fl Oz (Pack of 12)', 
+                'thumbnails' => ['./images/Energy 6.jpg', './images/Energy6_1.jpg','./images/Energy6_2.jpg','./images/Energy6_3.jpg']
             ],
             [
                 'id' => 'drink-7', 
-                'name' => 'Bloom Nutrition Sparkling Energy Drink for Focus', 
-                'price' => '$15.00', 
-                'image' => './images/Energy 3.webp', 
-                'brand' => 'Jordan', 
+                'name' => 'RYSE Clear Protein Shake', 
+                'price' => '$38.99', 
+                'image' => './images/Energy 7.jpg', 
+                'brand' => 'RYSE', 
                 'description' => 'Freshly squeezed juice.', 
-                'thumbnails' => ['./images/Energy 3.webp', './images/Energy3_1.jpg', './images/Energy3_2.jpg', './images/Energy3_3.jpg',]
+                'thumbnails' => ['./images/Energy 7.jpg', './images/Energy7_1.jpg', './images/Energy7_2.jpg', './images/Energy7_3.jpg',]
             ],
             [
                 'id' => 'drink-8', 
-                'name' => 'GHOST Energy Drink - 12-Pack', 
-                'price' => '$16.80', 
-                'image' => './images/Energy 4.jpg', 
-                'brand' => 'Jordan', 
-                'description' => 'Aromatic tea blend.', 
-                'thumbnails' => ['./images/Energy 4.jpg', './images/Energy4_1.png','./images/Energy4_2.png','./images/Energy4_3.png',]
+                'name' => 'Slate Milk', 
+                'price' => '$46.99', 
+                'image' => './images/Energy 8.webp', 
+                'brand' => 'Slate Milk', 
+                'description' => 'Slate Milk - Ultra High Protein Shake - Chocolate - 42g Protein, 2g Sugar, 200 Calories, 4g Net Carbs - Lactose Free - No Added Sugar, No Seed Oils - Breakfast Boost, Post Workout - 15 fl oz, 12 Cans', 
+                'thumbnails' => ['./images/Energy 8.webp', './images/Energy8_1.jpg','./images/Energy8_2.jpg','./images/Energy8_3.jpg',]
             ],
         ],
     ],
@@ -274,6 +274,42 @@ $categories = [
                 'description' => 'Vibrant eyeshadow palette.', 
                 'thumbnails' => ['./images/Skincare4_1.webp', './images/Skincare4_2.webp','./images/Skincare4_3.webp', './images/Skincare4_4.webp']
             ],
+            [
+                'id' => 'cosmetic-5', 
+                'name' => 'Heartleaf Quercetinol Pore Deep Cleansing Foam', 
+                'price' => '$14.00', 
+                'image' => './images/Skincare 5.avif', 
+                'brand' => 'Heartleaf', 
+                'description' => 'Anua Heartleaf Quercetinol Pore Deep Cleansing Foam infused with soothing ingredients and BHA that cleanses the skin and minimizes the appearance of pores.', 
+                'thumbnails' => ['./images/Skincare 5.avif', './images/Skincare5_1.avif','./images/Skincare5_2.avif', './images/Skincare5_3.avif']
+            ],
+            [
+                'id' => 'cosmetic-6', 
+                'name' => 'Slam Dunk Hydrating Moisturizer', 
+                'price' => '$16.00', 
+                'image' => './images/Skincare 6.avif', 
+                'brand' => 'Bubble', 
+                'description' => 'Bubble is Slam Dunk Hydrating Moisturizer is an everyday cream moisturizer that uses natural ingredients like aloe leaf juice and hoya lacosuna flower extract to deeply hydrate and restore essential nutrients, leaving you feeling nourished, calm, protected, and ready for anything.', 
+                'thumbnails' => ['./images/Skincare 6.avif', './images/Skincare6_1.avif','./images/Skincare6_2.avif', './images/Skincare6_3.avif']
+            ],
+            [
+                'id' => 'cosmetic-7', 
+                'name' => 'Deep Cleansing Oil Facial Cleanser', 
+                'price' => '$16.00', 
+                'image' => './images/Skincare 7.avif', 
+                'brand' => 'DHC', 
+                'description' => 'DHC Deep Cleansing Oil is the original Japanese oil cleanser that removes makeup and dissolves impurities, leaving your skin clean, soft and radiant.', 
+                'thumbnails' => ['./images/Skincare 7.avif', './images/Skincare7_1.avif','./images/Skincare7_2.avif', './images/Skincare7_3.avif']
+            ],
+            [
+                'id' => 'cosmetic-8', 
+                'name' => 'Natural Moisturizing Factors + Hyaluronic Acid Daily Moisturizer', 
+                'price' => '$14.00', 
+                'image' => './images/Skincare 8.avif', 
+                'brand' => 'The Ordinary', 
+                'description' => 'The Ordinary is Natural Moisturizing Factors + HA Daily Moisturizer is a surface hydration formula with hyaluronic acid, triglycerides, ceramides, and other components. This lightweight, non-greasy cream is great for those looking for a solution for signs of dehydration.', 
+                'thumbnails' => ['./images/Skincare 8.avif', './images/Skincare8_1.avif','./images/Skincare8_2.avif', './images/Skincare8_3.avif']
+            ],
         ],
     ],
     [
@@ -283,7 +319,7 @@ $categories = [
             [
                 'id' => 'shoes-1', 
                 'name' => 'Air Jordan 1 Retro', 
-                'price' => '$180', 
+                'price' => '$180.00', 
                 'image' => './images/Shoes 1.png', 
                 'brand' => 'Nike', 
                 'description' => 'MJ\'s college years catapulted him to early stardom, and this reimagined AJ1 High nods back to his North Carolina roots. Distressed leather, classic color blocking and special packaging add a vintage feel—as if you\'ve been saving this pair since 1985.', 
@@ -291,7 +327,7 @@ $categories = [
             [
                 'id' => 'shoes-2', 
                 'name' => 'Air Jordan 1 Mid SE', 
-                'price' => '$135', 
+                'price' => '$135.00', 
                 'image' => './images/Shoes 2.avif', 
                 'brand' => 'Nike', 
                 'description' => 'This special edition AJ1 is almost too hot to handle. Genuine leather gives them a premium feel. A subtle metallic shine on the collar and Swoosh logo makes em pop. Are you ready to fire up your look?', 
@@ -299,7 +335,7 @@ $categories = [
             [
                 'id' => 'shoes-3', 
                 'name' => 'Jordan 12 Retro', 
-                'price' => '$3.80', 
+                'price' => '$138.80', 
                 'image' => './images/Shoes 3.avif', 
                 'brand' => 'Nike', 
                 'description' => 'Stylish casual sneakers.', 
@@ -308,11 +344,45 @@ $categories = [
             [
                 'id' => 'shoes-4', 
                 'name' => 'Jordan Spizike Low', 
-                'price' => '$160', 
+                'price' => '$160.00', 
                 'image' => './images/Shoes 4.avif', 
                 'brand' => 'Nike', 
                 'description' => 'The Spizike takes elements of five classic Jordans, combines them, and gives you one iconic sneaker. It is an homage to Spike Lee formally introducing Hollywood and hoops in a culture moment. You get a great looking pair of kicks with some history.', 
                 'thumbnails' => ['./images/Shoes4_1.avif', './images/Shoes4_2.avif','./images/Shoes4_3.avif', './images/Shoes4_4.avif']
+            ],
+            [
+                'id' => 'shoes-5', 
+                'name' => 'Jordan Spizike Low', 
+                'price' => '$165.00', 
+                'image' => './images/Shoes 5.avif', 
+                'brand' => 'Nike', 
+                'description' => 'The Spizike takes elements of five classic Jordans, combines them, and gives you one iconic sneaker. It is an homage to Spike Lee formally introducing Hollywood and hoops in a culture moment. You get a great looking pair of kicks with some history.', 
+                'thumbnails' => ['./images/Shoes 5.avif', './images/Shoes5_1.avif', './images/Shoes5_2.avif', './images/Shoes5_3.avif']],
+            [
+                'id' => 'shoes-6', 
+                'name' => 'Air Jordan 1 Low Premium', 
+                'price' => '$140.00', 
+                'image' => './images/Shoes 6.avif', 
+                'brand' => 'Nike', 
+                'description' => 'Inspired by the original that debuted in 1985, the Air Jordan 1 Low Premium offers a clean, classic look that is familiar yet always fresh. With an iconic design that pairs perfectly with any fit, these kicks ensure you will always be on point.', 
+                'thumbnails' => ['./images/Shoes 6.avif', './images/Shoes6_1.avif', './images/Shoes6_2.avif', './images/Shoes6_3.avif']],
+            [
+                'id' => 'shoes-7', 
+                'name' => 'Nike Air Max 270', 
+                'price' => '$112.97', 
+                'image' => './images/Shoes 7.avif', 
+                'brand' => 'Nike', 
+                'description' => 'Nike is first lifestyle Air Max brings you style, comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, showcasing Nike is greatest innovation with its large window and fresh array of colors.', 
+                'thumbnails' => ['./images/Shoes 7.avif', './images/Shoes7_1.avif','./images/Shoes7_2.avif', './images/Shoes7_3.avif']
+            ],
+            [
+                'id' => 'shoes-8', 
+                'name' => 'Nike Victori One', 
+                'price' => '$29.97', 
+                'image' => './images/Shoes 8.avif', 
+                'brand' => 'Nike', 
+                'description' => 'From the beach to the bleachers, the Victori One is a must-have slide for everyday activities. Subtle yet substantial updates like a wider strap and softer foam make lounging easy. Go ahead—enjoy endless comfort for your feet.', 
+                'thumbnails' => ['./images/Shoes 8.avif', './images/Shoes8_1.avif','./images/Shoes8_2.avif', './images/Shoes8_3.avif']
             ],
         ],
     ],
