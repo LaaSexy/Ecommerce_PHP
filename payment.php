@@ -1,18 +1,17 @@
 <?php
-session_start();
-$shopData = [
-    'currency' => isset($_SESSION['shop_currency']) ? $_SESSION['shop_currency'] : 'USD'
-];
+    session_start();
+    $shopData = [
+        'currency' => isset($_SESSION['shop_currency']) ? $_SESSION['shop_currency'] : 'USD'
+    ];
 
-function formatCurrency($amount, $currency = 'USD') {
-    $symbol = $currency === 'USD' ? '$' : ($currency === 'KHR' ? '៛' : $currency);
-    return $symbol . number_format($amount, 2, '.', ',');
-}   
+    function formatCurrency($amount, $currency = 'USD') {
+        $symbol = $currency === 'USD' ? '$' : ($currency === 'KHR' ? '៛' : $currency);
+        return $symbol . number_format($amount, 2, '.', ',');
+    }   
 
-$slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : '';
-$total = isset($_GET['total']) ? $_GET['total'] : '0.00';
-$currency = $shopData['currency'];
-
+    $slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : '';
+    $total = isset($_GET['total']) ? $_GET['total'] : '0.00';
+    $currency = $shopData['currency'];
 ?>
 
 <!DOCTYPE html>
@@ -37,14 +36,6 @@ $currency = $shopData['currency'];
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const btn_back = document.querySelectorAll('.back-btn');
-         btn_back.forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.href = 'index.php';
-            });
-        });
-    </script>
+    <script src="./javascript/payment.js"></script>
 </body>
 </html>
