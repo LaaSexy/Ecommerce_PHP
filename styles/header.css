@@ -3,25 +3,6 @@
   src: url("fonts/Suwannaphum.ttf") format("truetype");
   font-weight: 400;
 }
-.khmer-font {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 100;
-}
-
-.khmer-font-regular {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 400;
-}
-
-.khmer-font-b {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 600;
-}
-
-.khmer-font-bold {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 700;
-}
 .navbar-custom {
   background-color: #ffffff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -166,7 +147,29 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
-
+.khmer-font {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 100;
+}
+.khmer-font-regular {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 400;
+}
+.khmer-font-b {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 600;
+}
+.khmer-font-bold {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 700;
+}
+.nav-custom {
+  background-color: #ffc715;
+}
+.btn-primary {
+  background-color: transparent !important;
+  border: none !important;
+}
 @media (max-width: 576px) {
   .shop-name {
     font-size: 1.2rem;

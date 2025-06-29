@@ -1,3 +1,8 @@
+<?php
+  require_once __DIR__ . '/database/database.php';
+  $db = new EcommerceDB();
+  $categories = $db->getCategoriesWithProducts();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,46 +14,7 @@
     <link rel="stylesheet" href="./styles/content.css">
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-      .sticky-container {
-          position: sticky;
-          top: 170px;
-          background-color: white;
-          z-index: 100;
-          padding-top: 15px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #eee;
-      }
-      .card-custom {
-          cursor: pointer; 
-          transition: transform 0.2s;
-      }
-      .card-custom:hover {
-          transform: scale(1.05);
-      }
-      .btn-carousel {
-        background: transparent;
-        border: none;
-        outline: none;
-      }
-      .btn-none {
-        background: none;
-        border: none;
-        padding: 0;
-        margin: 0;
-        width: 15%;
-      }
-      .carousel-item img {
-        width: 100%;
-        height: auto;
-        max-height: 500px;
-        object-fit: cover;
-      }
-      .btn-addToCart{
-        border-radius: 5px;
-        background-color: #FFC715;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
    <main class="container-fluid px-0">
@@ -88,7 +54,6 @@
       </div>
         <div class="bg-light">
             <?php
-            include './constants/categories.php';
             foreach ($categories as $category) {
             ?>
                 <div class="sticky-container bg-light px-4" id="<?php echo htmlspecialchars($category['id']); ?>">
@@ -107,9 +72,12 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title mb-2 text-muted text-truncate"><?php echo htmlspecialchars($item['name']); ?></h5>
-                                        <div class="d-flex justify-content-between align-items-center align-content-center">
-                                          <p class="card-text text-muted"><?php echo htmlspecialchars($item['price']); ?></p>
-                                          <button class="btn btn-addToCart text-white">Add to cart</button>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                          <p class="card-text text-muted mb-0 text-center align-self-center font-weight-bold">
+                                              <i class="fas fa-dollar-sign mr-1"></i>
+                                            <?php echo htmlspecialchars($item['price']); ?>
+                                          </p>
+                                          <button class="btn btn-sm btn-addToCart text-white"><i class="fas fa-cart-plus mr-2"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>

@@ -88,7 +88,7 @@ if (!$item) {
         <div class="d-flex flex-row justify-content-center">
             <button type="button" class="btn-decreasement quantity-btn btn btn-lg text-white btn-lg">−</button>
             <h3 class="quantity-input text-black  mt-2">1</h3>
-            <button type="button" class="btn-increasement quantity-btn btn btn-lg text-white">+</button>
+            <button type="button" class="btn-increasement quantity-btn btn btn-lg text-white fw-bold">+</button>
         </div>
         <div class="d-flex flex-row justify-content-center mt-3">
              <button type="button" class="add-to-cart btn" data-price="<?php echo htmlspecialchars(str_replace(['$', ','], '', $item['price'])); ?>">
@@ -96,7 +96,6 @@ if (!$item) {
             </button>
         </div>
     </footer>
-
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>

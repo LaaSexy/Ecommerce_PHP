@@ -1,5 +1,7 @@
 <?php
-include './constants/categories.php';
+    require_once __DIR__ . '/database/database.php';
+    $db = new EcommerceDB();
+    $categories = $db->getCategories(); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,36 +12,6 @@ include './constants/categories.php';
     <link rel="icon" type="image/png" href="./images/Shopfinity.png">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        @font-face {
-            font-family: 'Suwannaphum';
-            src: url('fonts/Suwannaphum.ttf') format('truetype');
-            font-weight: 400;
-        } 
-        .khmer-font {
-            font-family: 'Hanuman', 'Suwannaphum', 'Noto Sans Khmer', sans-serif !important;
-            font-weight: 100;
-        }
-        .khmer-font-regular {
-            font-family: 'Hanuman', 'Suwannaphum', 'Noto Sans Khmer', sans-serif !important;
-            font-weight: 400;
-        }
-        .khmer-font-b {
-            font-family: 'Hanuman', 'Suwannaphum', 'Noto Sans Khmer', sans-serif !important;
-            font-weight: 600;
-        }
-        .khmer-font-bold {
-            font-family: 'Hanuman', 'Suwannaphum', 'Noto Sans Khmer', sans-serif !important;
-            font-weight: 700;
-        } 
-        .nav-custom {
-            background-color: #FFC715;
-        }
-        .btn-primary{
-            background-color: transparent !important;
-            border: none !important;
-        }
-    </style>
 </head>
 <body>
     <header class="sticky-top">

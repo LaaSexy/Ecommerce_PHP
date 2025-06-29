@@ -1,8 +1,3 @@
--- Create the database
-CREATE DATABASE IF NOT EXISTS ecommerce CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE ecommerce;
-
-
 -- Create user database for login
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -101,11 +96,10 @@ INSERT INTO products (product_id, name, price, image, brand, description, catego
 ('drink-2', 'PRIME HYDRATION Variety - ICE POP', 14.98, './images/Energy 2.jpg', 'Prime', 'Strawberry Banana, Lemonade, Sports Drinks, Electrolyte Enhanced for Ultimate Hydration, 250mg BCAAs, B Vitamins, Antioxidants, Low Sugar, 12 Fl Oz, 15 Pack', 3),
 ('drink-3', 'Bloom Nutrition Sparkling Energy Drink for Focus', 15.00, './images/Energy 3.webp', 'Jordan', 'Freshly squeezed juice.', 3),
 ('drink-4', 'GHOST Energy Drink - 12-Pack', 16.80, './images/Energy 4.jpg', 'Jordan', 'Aromatic tea blend.', 3),
-('drink-5', 'Sting Energy Drink', 0.70, './images/Energy 1.jpg', 'Sting', 'Refreshing local beverage.', 3),
-('drink-6', 'PRIME HYDRATION Variety - ICE POP', 14.98, './images/Energy 2.jpg', 'Prime', 'Strawberry Banana, Lemonade, Sports Drinks, Electrolyte Enhanced for Ultimate Hydration, 250mg BCAAs, B Vitamins, Antioxidants, Low Sugar, 12 Fl Oz, 15 Pack', 3),
-('drink-7', 'Bloom Nutrition Sparkling Energy Drink for Focus', 15.00, './images/Energy 3.webp', 'Jordan', 'Freshly squeezed juice.', 3),
-('drink-8', 'GHOST Energy Drink - 12-Pack', 16.80, './images/Energy 4.jpg', 'Jordan', 'Aromatic tea blend.', 3);
-
+('drink-5', 'Alani Nu VARIETY PACK', 20.70, './images/Energy 5.jpg', 'Sting', 'Alani Nu VARIETY PACK (CHERRY SLUSH, JUICY PEACH, ORANGE KISS), Low Calorie Energy Drinks, 100mg Caffeine, Biotin, B Vitamins, Zero Sugar, 10 Calories or Less, 8 Fl Oz Cans, 12 Pack', 3),
+('drink-6', 'CELSIUS Sparkling Galaxy Vibe', 19.49, './images/Energy 6.jpg', 'Celsius', 'CELSIUS Sparkling Galaxy Vibe, Functional Essential Energy Drink 12 Fl Oz (Pack of 12)', 3),
+('drink-7', 'RYSE Clear Protein Shake', 38.99, './images/Energy 7.jpg', 'RYSE', 'Freshly squeezed juice.', 3),
+('drink-8', 'Slate Milk', 46.99, './images/Energy 8.webp', 'Slate Milk', 'Slate Milk - Ultra High Protein Shake - Chocolate - 42g Protein, 2g Sugar, 200 Calories, 4g Net Carbs - Lactose Free - No Added Sugar, No Seed Oils - Breakfast Boost, Post Workout - 15 fl oz, 12 Cans', 3);
 -- Insert products for Cosmetics category
 INSERT INTO products (product_id, name, price, image, brand, description, category_id) VALUES
 ('cosmetic-1', 'Centella Ampoule Foam', 4.00, './images/Skincare 1.webp', 'Skin 1004', 'A pH 5 cleanser with Coconut-derived surfactants and Citric acid gently cleanses the skin without causing dryness or tightness.', 4),

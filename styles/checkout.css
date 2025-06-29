@@ -1,195 +1,54 @@
 body {
-  padding-top: 70px;
-  padding-bottom: 100px;
-  font-family: Arial, sans-serif;
+  margin-bottom: 5rem;
   background-color: #f8f8f8;
 }
-@font-face {
-  font-family: "Suwannaphum";
-  src: url("fonts/Suwannaphum.ttf") format("truetype");
-  font-weight: 400;
-}
-.khmer-font {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 100;
-}
-.khmer-font-regular {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 400;
-}
-.khmer-font-b {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 600;
-}
-.khmer-font-bold {
-  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
-  font-weight: 700;
-}
-.product-title {
-  font-size: 19px;
-  font-weight: bold;
-}
-.price {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-.options-label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-.size-option {
-  display: inline-block;
-  margin-right: 10px;
-  height: 30px;
-  width: 79px;
-  border: 1px solid #c6c6c6;
-  border-radius: 30px;
-  cursor: pointer;
-  text-align: center;
-}
-.size-option:hover,
-.size-option.active {
-  background-color: #ffc715;
-  border: 1px solid #ddd;
-  color: white;
-}
-.description-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 1.5rem 0 0.8rem 0;
-}
-
 header {
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1000;
-  padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .footer-content {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px 0;
-}
-.add-to-cart {
-  background-color: #ffc715;
-  color: white;
-  border: none;
-  width: 90%;
-  height: 45px;
-  border-radius: 50px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.contact-section,
-.items-section {
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-.section-title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-.form-control {
-  margin-bottom: 15px;
-  border-radius: 50px;
-  padding: 12px 20px;
-  border: 1px solid #ddd;
-}
-.form-control:focus {
-  border-color: #ffc715;
-  box-shadow: 0 0 0 0.25rem rgba(255, 199, 21, 0.25);
-}
-.item-row {
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
-}
-.item-row:last-child {
-  border-bottom: none;
-}
-.item-name {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.item-price {
-  color: #6c757d;
-  font-weight: 500;
-}
-.quantity-control {
-  display: flex;
-  align-items: center;
 }
 .quantity-btn {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: #ffc107;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
   font-weight: bold;
-  user-select: none;
-}
-.quantity-btn:hover {
-  background-color: #e9ecef;
 }
 .quantity-input {
-  margin: 0 10px;
-  width: 40px;
+  width: 50px;
+  height: 30px;
   text-align: center;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  padding: 5px;
+  border: none;
 }
 .checkout-btn {
-  background-color: #ffc715;
-  color: #333;
-  padding: 15px 0;
-  font-weight: bold;
-  border-radius: 50px;
+  background-color: #ffc107;
+  border: none;
   width: 100%;
-  border: none;
-  font-size: 1.1rem;
-  transition: all 0.3s;
+  height: 45px;
+  border-radius: 25px;
+  font-weight: 600;
 }
-.checkout-btn:hover {
-  background-color: #e6b000;
-  transform: translateY(-2px);
-}
-header {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  padding: 15px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}
-.back-btn {
-  border: none;
+.delete-btn {
   background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 18px;
   padding: 5px;
 }
-.back-btn svg {
-  color: #333;
+.delete-btn:hover {
+  color: #b02a37;
+}
+.empty-image {
+  width: 40%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
 }
