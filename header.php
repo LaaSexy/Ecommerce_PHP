@@ -2,6 +2,10 @@
     require_once __DIR__ . '/database/database.php';
     $db = new EcommerceDB();
     $categories = $db->getCategories(); 
+    if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) { 
+        header("Location: login.php"); 
+        exit; 
+    } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +33,7 @@
                 </a>
                 <div class="dropdown show">
                     <a class="btn btn-primary dropdown-toggle text-dark font-weight-bold mt-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Teng Chantola
+                        <?php echo isset($_SESSION['admin_username']) ? htmlspecialchars($_SESSION['admin_username']) : 'Guest'; ?>
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
                         <li>
@@ -42,9 +46,8 @@
                                 <i class="fas fa-cog fa-fw mr-2"></i>Settings
                             </a>
                         </li>
-                        <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item btn_logout" href="#">
+                            <a class="dropdown-item btn_logout" href="logout.php">
                                 <i class="fas fa-sign-out-alt fa-fw mr-2"></i>Logout
                             </a>
                         </li>

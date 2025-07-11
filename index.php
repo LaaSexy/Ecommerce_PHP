@@ -1,11 +1,11 @@
 <?php
     session_start();
-    include("./database/database.php");
-    // if (!isset($_SESSION['user_id'])) {
-    //     require_once __DIR__ . '/Login.php';
-    //     exit;
-    // }
-?>
+    // require_once __DIR__ . '/database/database.php';
+    if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) { 
+        header("Location: login.php"); 
+        exit; 
+    } 
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>

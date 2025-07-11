@@ -37,7 +37,7 @@
                             <i class="fas fa-user"></i>
                         </span>
                         <input type="text" class="form-control" id="validationCustomUsername" 
-                               placeholder="Enter your name" required>
+                               placeholder="Teng Chantola" required>
                         <div class="invalid-feedback">
                             Please enter name
                         </div>
@@ -52,7 +52,7 @@
                             <i class="fas fa-phone"></i>
                         </span>
                         <input type="tel" class="form-control" id="validationCustomNumber" 
-                               placeholder="Enter number" required>
+                               placeholder="012345678" required>
                         <div class="invalid-feedback">
                             Please enter phone number.
                         </div>
@@ -67,7 +67,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </span>
                         <textarea class="form-control" id="validationCustomAddress" 
-                                  placeholder="Enter your complete address" rows="2" required></textarea>
+                                  placeholder="Phnom Penh, Cambodia" rows="2" required></textarea>
                         <div class="invalid-feedback">
                             Please enter address.
                         </div>

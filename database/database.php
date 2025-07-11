@@ -14,7 +14,7 @@ class EcommerceDB {
         
         $this->connect();
     }
-    
+
     private function connect() {
         try {
             $dsn = "mysql:host={$this->host};dbname={$this->dbname};charset=utf8mb4";
@@ -31,7 +31,7 @@ class EcommerceDB {
     
     // Get all categories
     public function getCategories() {
-        $sql = "SELECT * FROM categories ORDER BY name";
+        $sql = "SELECT * FROM categories";    
         $stmt = $this->pdo->query($sql);
         return $stmt->fetchAll();
     }
@@ -120,11 +120,9 @@ class EcommerceDB {
         return $products;
     }
     
-    // Get data in original array format for backward compatibility
     public function getCategoriesWithProducts() {
         $categories = $this->getCategories();
         $result = [];
-        
         foreach ($categories as $category) {
             $products = $this->getCompleteProductsByCategory($category['slug']);
             
@@ -157,11 +155,9 @@ class EcommerceDB {
             
             $result[] = $categoryData;
         }
-        
         return $result;
     }
     
-    // Search products
     public function searchProducts($search_term) {
         $sql = "SELECT p.*, c.name as category_name, c.slug as category_slug 
                 FROM products p 
