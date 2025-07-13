@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/database/database.php';
+include './constants/categories.php';
     $db = new EcommerceDB();
     $categories = $db->getCategories(); 
     if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) { 

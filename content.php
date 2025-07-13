@@ -72,12 +72,12 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title mb-2 text-muted text-truncate"><?php echo htmlspecialchars($item['name']); ?></h5>
-                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
                                           <p class="card-text text-muted mb-0 text-center align-self-center font-weight-bold">
                                               <i class="fas fa-dollar-sign mr-1"></i>
                                             <?php echo htmlspecialchars($item['price']); ?>
                                           </p>
-                                          <button class="btn btn-sm btn-addToCart text-white"><i class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                          <button class="btn sm:btn-sm btn-sm btn-addToCart text-white"><i class="fas fa-cart-plus mr-2"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -86,6 +86,20 @@
                     <?php } ?>
                 </div>
             <?php } ?>
+        </div>
+        <div id="emptySearchState" class="container">
+          <div  class="empty-search-state d-flex flex-column justify-content-center align-items-center text-center py-5">
+              <div class="empty-search-icon mb-4">
+                  <img src="./images/CardEmpty.png" alt="No results found" class="img-fluid" style="max-width: 150px;">
+              </div>
+              <div class="mb-3">
+                  <h4 class="khmer-font mb-2">រកមិនឃើញលទ្ធផលទំនិញសម្រាប់ពាក្យ "<span id="searchTermDisplay" class="search-highlight"></span>"</h4>
+                  <p class="text-muted khmer-font">សូមព្យាយាមស្វែងរកជាមួយពាក្យផ្សេងទៀត</p>
+              </div>
+              <div>
+                  <button class="btn btn-primary px-4" onclick="clearSearch()">សំអាតការស្វែងរក</button>
+              </div>
+          </div>
         </div>
     </main>
     <script src="./javascript/content.js"></script>

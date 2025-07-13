@@ -1,6 +1,9 @@
+document.getElementById("emptySearchState").style.display = "none";
+
 function searchItems() {
   const searchTerm = document.getElementById("searchInput").value.toLowerCase();
   const cards = document.querySelectorAll(".card-custom");
+  let foundResults = false;
   cards.forEach((card) => {
     const title = card.querySelector(".card-title").textContent.toLowerCase();
     if (title.includes(searchTerm)) {
@@ -31,4 +34,14 @@ function searchItems() {
       header.nextElementSibling.style.display = "flex";
     }
   });
+  if (!foundResults && searchTerm.length > 0) {
+    document.getElementById("emptySearchState").style.display = "block";
+    document.getElementById("searchTermDisplay").textContent = searchTerm;
+  } else {
+    document.getElementById("emptySearchState").style.display = "none";
+  }
+}
+function clearSearch() {
+  document.getElementById("searchInput").value = "";
+  searchItems();
 }

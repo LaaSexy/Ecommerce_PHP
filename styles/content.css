@@ -216,7 +216,7 @@ h3 {
 
 .sticky-container {
   position: sticky;
-  top: 170px;
+  top: 150px;
   background-color: white;
   z-index: 100;
   padding-top: 15px;

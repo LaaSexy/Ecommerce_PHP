@@ -197,7 +197,7 @@ if (!$item) {
                     document.getElementById('mainImage').src = thumbnails[0].src;
                 }
                 Swal.fire({
-                    title: "Added Successfully!",
+                    text: "Added Successfully!",
                     icon: "success",
                     draggable: true,
                 });

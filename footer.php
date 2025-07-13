@@ -16,10 +16,10 @@
                     <p>Shopfinity is your premier online shopping destination in Cambodia. We offer high-quality products with fast delivery and excellent customer service.</p>
                     <div class="social-icons mt-3">
                         <a href="https://www.facebook.com/profile.php?id=100072511796260&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/tengchanto41463"><i class="fab fa-twitter"></i></a>
+                        <a href="https://x.com/Tengchantola"><i class="fab fa-twitter"></i></a>
                         <a href="https://t.me/Tengchantola"><i class="fab fa-telegram"></i></a>
-                        <a href="https://www.linkedin.com/in/teng-chantola-09b292297/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="http://www.youtube.com/@Laaanimechannel"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/tengchantola"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="http://www.youtube.com/@Tengchantola"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 

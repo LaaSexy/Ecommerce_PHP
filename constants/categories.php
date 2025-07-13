@@ -194,7 +194,7 @@ $categories = [
                 'image' => './images/Energy 4.jpg', 
                 'brand' => 'Jordan', 
                 'description' => 'Aromatic tea blend.', 
-                'thumbnails' => ['./images/Energy 4.jpg', './images/Energy4_1.png','./images/Energy4_2.png','./images/Energy4_3.png',]
+                'thumbnails' => ['./images/Energy 4.jpg', './images/Energy4_1.jpg','./images/Energy4_2.jpg','./images/Energy4_3.jpg',]
             ],
             [
                 'id' => 'drink-5', 
