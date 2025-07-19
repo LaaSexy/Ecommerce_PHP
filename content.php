@@ -74,7 +74,6 @@
                                         <h5 class="card-title mb-2 text-muted text-truncate"><?php echo htmlspecialchars($item['name']); ?></h5>
                                         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
                                           <p class="card-text text-muted mb-0 text-center align-self-center font-weight-bold">
-                                              <i class="fas fa-dollar-sign mr-1"></i>
                                             <?php echo htmlspecialchars($item['price']); ?>
                                           </p>
                                           <button class="btn sm:btn-sm btn-sm btn-addToCart text-white"><i class="fas fa-cart-plus mr-2"></i>Add to cart</button>
