@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Suwannaphum";
+  src: url("fonts/Suwannaphum.ttf") format("truetype");
+  font-weight: 400;
+}
+.khmer-font {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 100;
+}
+
+.khmer-font-regular {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 400;
+}
+
+.khmer-font-b {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 600;
+}
+
+.khmer-font-bold {
+  font-family: "Hanuman", "Suwannaphum", "Noto Sans Khmer", sans-serif !important;
+  font-weight: 700;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,7 +49,7 @@ input {
   width: 2000px;
   height: 2000px;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #063970, #063970d5);
+  background: linear-gradient(-45deg, #3f3d56, #3f3d56);
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
@@ -71,12 +96,12 @@ form.sign-up-form {
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
-  box-shadow: 0 2px #063970;
+  box-shadow: 0 2px #3f3d56;
 }
 .input-field i {
   text-align: center;
   line-height: 55px;
-  color: #063970;
+  color: #3f3d56;
   font-size: 1.1rem;
 }
 .input-field input {
@@ -104,7 +129,7 @@ form.sign-up-form {
   outline: none;
   border-radius: 15px;
   cursor: pointer;
-  background-color: #063970;
+  background-color: #3f3d56;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;

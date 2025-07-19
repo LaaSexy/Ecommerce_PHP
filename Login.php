@@ -26,10 +26,10 @@ if (isset($_POST['login'])) {
             header("Location: index.php"); 
             exit; 
         } else { 
-            $error = "Invalid password!"; 
+            $error = "ខុសលេខសម្ងាត់"; 
         } 
     } else { 
-        $error = "User not found!"; 
+        $error = "មិនអាចស្វែងរកអ្នកប្រើប្រាស់"; 
     } 
 } 
 
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
         $stmt->store_result();
         
         if ($stmt->num_rows > 0) {
-            $error = "Username already exists!";
+            $error = "អ្នកប្រើប្រាស់នេះមានរួចហើយ";
         } else {
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             $insert_sql = "INSERT INTO admins (username, password) VALUES (?, ?)";
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
             $stmt->bind_param("ss", $username, $hashed_password);
             
             if ($stmt->execute()) {
-                $success = "Registration successful! You can now login.";
+                $success = "ការចុះឈ្មោះទទួលបានភាពជោគជ័យ! អ្នកអាចចូលឥឡូវនេះបាន.";
             } else {
                 $error = "Error: " . $stmt->error;
             }
@@ -97,44 +97,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
       <div class="forms-container">
         <div class="signin-signup">
           <form action="login.php" method="POST" class="sign-in-form">
-            <img src="../images/LogoAc.png" alt="" />
+            <img src="./images/LogoAc.png" alt="" />
             <?php if(isset($error)): ?>
               <div class="error-message"><?php echo $error; ?></div>
             <?php endif; ?>
             <?php if(isset($success)): ?>
               <div class="success-message"><?php echo $success; ?></div>
             <?php endif; ?>
-            <div class="input-field">
+            <div class="input-field khmer-font">
               <i class="fas fa-user"></i>
-              <input type="text" name="username" placeholder="Username" required />
+              <input type="text" name="username" placeholder="ឈ្មោះរបស់អ្នក" required />
             </div>
-            <div class="input-field">
+            <div class="input-field khmer-font">
               <i class="fas fa-lock"></i>
-              <input type="password" name="password" placeholder="Password" required />
+              <input type="password" name="password" placeholder="លេខសម្ងាត់របស់អ្នក" required />
             </div>
-            <input type="submit" name="login" value="Login" class="btn solid" />
+            <input type="submit" name="login" value="ចូល" class="btn solid khmer-font" />
 
-            <p class="social-text">Forgot Password?</p>
-            <div class="social-media">
-              <a
-                href=" https://www.facebook.com/profile.php?id=100072511796260&mibextid=LQQJ4d"
-                class="social-icon"
-              >
-                <img src="./images/facebook-icon.png" alt="Facebook" />
-              </a>
-              <a href="https://www.tiktok.com/@laa.sexy0" class="social-icon">
-                <img src="./images/Tiktok.png" alt="Tiktok" />
-              </a>
-              <a
-                href="https://www.youtube.com/@LaaSexyOfficial"
-                class="social-icon"
-              >
-                <img src="./images/Youtube.png" alt="Youtube" />
-              </a>
-              <a href="https://github.com/LaaSexy" class="social-icon">
-                <img src="./images/github.png" alt="Github" />
-              </a>
-            </div>
+            <p class="social-text​ khmer-font">តើអ្នកបានភ្លេចលេខកូដមែនទេ?</p>
+            <p class="khmer-font">សូមមើលនៅខាងលើឆ្វេង ហើយចុចដើម្បីចុះឈ្មោះ !</p>
           </form>
           <form action="login.php" method="POST" class="sign-up-form">
             <img src="./images/LogoAc.png" alt="" class="logo" />
@@ -144,17 +125,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
             <?php if(isset($success)): ?>
               <div class="success-message"><?php echo $success; ?></div>
             <?php endif; ?>
-            <div class="input-field">
+            <div class="input-field khmer-font">
               <i class="fas fa-user"></i>
-              <input type="text" name="username" placeholder="Username" required />
+              <input type="text" name="username" placeholder="ឈ្មោះរបស់អ្នក" required />
             </div>
-            <div class="input-field">
+            <div class="input-field khmer-font">
               <i class="fas fa-lock"></i>
-              <input type="password" name="password" placeholder="Password" required />
+              <input type="password" name="password" placeholder="លេខសម្ងាត់របស់អ្នក" required />
             </div>
-            <input type="submit" name="register" value="Sign Up" class="btn solid" />
+            <input type="submit" name="register" value="ចុះឈ្មោះ" class="btn solid khmer-font" />
 
-            <p class="social-text">Or Sign up with social platforms</p>
+            <p class="social-text khmer-font">រឺក៏ចុះឈ្មោះជាមួយនិងប្រព័ន្ទបណ្តាញខាងក្រោម</p>
             <div class="social-media">
               <a
                 href=" https://www.facebook.com/profile.php?id=100072511796260&mibextid=LQQJ4d"
@@ -181,24 +162,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
       <div class="panel-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New Here?</h3>
-            <p>
-              Welcome! Discover a world of possibilities and join our vibrant
-              community. Whether you're here to explore, learn, or connect,
-              we're excited to have you on board.
+            <h3 class="khmer-font">តើអ្នកជាសមាជិកថ្មីមែនទេ?</h3>
+            <p class="khmer-font">
+              ស្វាគមន៍! ស្វែងយល់ពីពិភពនៃលទ្ធភាព និងចូលរួមជាមួយខ្លួនអ្នកដ៏រស់រវើករបស់យើង
+              សហគម.មិនថាអ្នកនៅទីនេះ ដើម្បីស្វែងរក,រៀន,ឬភ្ជាប់,
+              យើងរំភើបណាស់ដែលមានអ្នកនៅទីនេះ។
             </p>
-            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+            <button class="btn transparent khmer-font" id="sign-up-btn">ចុះឈ្មោះ</button>
           </div>
           <img src="./images/Login.svg" class="image" alt="" />
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>One of us?</h3>
-            <p>
-              Already part of our community? Welcome back! Sign in to continue
-              your journey and access your personalized experience.
+            <h3 class="khmer-font">ម្នាក់ក្នុងចំណោមពួកយើង?</h3>
+            <p class="khmer-font">
+              ជាផ្នែកមួយនៃសហគមន៍របស់យើងរួចទៅហើយ?​ សូមស្វាគមន៍មកវិញ! សូមចុចបន្តរដើម្បី
+              ធ្វើដំណើរកំសាន្តរបស់អ្នកនិងចូលទៅកាន់បទពិសោធន៍ផ្ទាល់ខ្លួនរបស់អ្នក។
             </p>
-            <button class="btn transparent" id="sign-in-btn">Login</button>
+            <button class="btn transparent khmer-font" id="sign-in-btn">ចូល</button>
           </div>
           <img src="./images/Signup.svg" class="image" alt="" />
         </div>  
